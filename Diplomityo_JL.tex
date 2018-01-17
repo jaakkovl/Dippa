@@ -354,7 +354,17 @@ Telia Finland Oyj:n asiakaspalvelujärjestelmää Kontakti L, jolle on asetettu 
 
 \subsection{Tutkimuskysymys ja alakysymykset}
 
-Pääkysymys:
+Pääkysymys: Tulee varmaankin muuttaa.
+Miten asiakasprosessi tulisi rakentaa, että se vastaisi liiketoiminnan tavoitteisiin, eli nopeampiin toimituksiin, asiakastyytyväisyyden parantumiseen, kustannustehokkuuteen, nopeampiin toimintojen lanseerauksiin, mahdollistaisi experimentation and learning in the market place?
+Telian täytyy psytyä rakentamaan näiden tuotteiden prosessiin nopeampi uusien teknologioiden kokeilu kuten uudet kanavat  yms. Niitä pitää saada nopeammin asiakkaille!!! Kuvaat miten paljon muutosvoimia tulossa yms ja sitten mites näihin päästään. Noh DevOps ne tuo. Mites DevOps onnistuu nykytilanteessa ja mitä pitää tehdä että sinn päästään?
+
+Se Sofigaten liiketoimintavalmiushomma. Kuvaa nykytila, ja tavoitetila. Mikä estää matkan tavoiteltilaan? 
+Mitkä osat asiakasprosessista on kannattava automatisoida?
+Telian digitaalisen vision mukaan, onko 80-prosentin automatisaatioaste mahdollista saavuttaa Kontakti L:n asiakasprosessissa?
+
+Mitkä tekijät rajoittavat asiakasprosessin automatisointia?
+Miten Kontakti L:n asiakasprosessin tulisi rakentaa Miten asiakaspalvelujärjestelmän asiakasprosessissa voidaan hyödyntää.
+Miten Kontakti L:n asiakasprosessi tulee rakentaa, kun siltä odotetaan toimitusvarmuutta, kustannustehokkuutta ja automatisointia.
 \begin{itemize}
 \item[--]Kysymys 1: Mitkä ovat ne olosuhteet, joissa Kontakti L- asiakaspalvelujärjestelmän asiakasprosessi voidaan automatisoida?
 \item[--]Vastaus 1: Kuvaus automatisoidusta asiakasprosessista ja sen vaatimista olosuhteista.
@@ -409,26 +419,25 @@ Liiketoimintaprosessit on yrityksen kehittämiä työkaluja sen tavoitteiden saa
 
 Liiketoimintaprosessit ovat yrityksen systemaattiset ja standartoidut työkalut niiden tavoitteiden saavuttamiseksi, jonka vuoksi yritys on olemassa. Yrityksen liiketoimintaprosessien voidaan ajatella liikkuvan horisontaalisesti sen eri toimintojen, kuten myynnin, toimituksen tai vaikkapa laskutuksen läpi. Näitä jokaiselta yritykseltä löytyviä toimintoja kutsutaan usein vertikaaleiksi. Suoraan ulkoiselle asiakkaalle arvoa tuottavia prosesseja kutsutaan liiketoiminnan ydinprosesseiksi. Liiketoimintaprosessien turvaamiseksi on olemassa tukiprosesseja sisäistä asiakasta varten, kuten esimerkiksi sisäisen tietojärjestelmän ylläpitoprosessi tai vaikkapa sisäisen viestinnän prosessi. Liiketoiminnan tukiprosessit eivät välttämättä tuota ydinprosesseihin verrattavaa arvoa, mutta kun ne lakkaavat toimimasta, niillä on huomattavia vaikutuksia yrityksen toimintaan. On huomattava, että liiketoimintaprosessilla on aina asiakas (joko sisäinen tai ulkoinen), joka saavuttaa prosessin avulla haluamansa lopputuloksen. Liiketoimintaprosessi siis ylittää organisaation rajat ja sillä on usein vähän riippuvuutta itse organisaation rakenteeseen.
 
-Yrityksen eri toiminnoista koostuvaa prosessinäkymää kutsutaan Lean-mallissa arvovirraksi, kertoo Womack ja Jones.(Lean thinking lähde) Kirjoittajien mukaan arvovirran ajatuksena on tehdä näkyväksi yrityksen arvotuotannon järjestelmä ja alajärjestelmät, sekä näyttää järjestelmään menevät syötteet, lopputuotokset ja prosessit järjestelmän sisällä, jotka muokkaavat syötteitä lopputuloksiksi. Heidän mukaansa syötteiden prosessointi lopputuotoksiksi vaatii resurssien hankkimista ja kuluttamista. Tyypillisiä yrityksen resursseja ovat esimerkiksi aika, raha, raaka-aineet ja työ. Se miten yritys päättää järjestää arvoketjun toiminnot ja hallita sitä, määrittävät tuotannosta aiheutuvat kustannukset ja tuotot. Tehokas arvovirta kuluttaa mahdollisimman vähän resursseja parhaan mahdollisen lopputuloksen aikaansaamiseksi. Toimiva arvovirta tuottaa myös aina samaa laatua joka on mitattavissa.
+Yrityksen eri toiminnoista koostuvaa prosessinäkymää kutsutaan Lean-ajattelussa arvovirraksi \citep{leanit}. Lean-ajattelussa tavoitellaan näkyvää arvotuotannon järjestelmää ja alajärjestelmiä, jolloin huomio keskitetään arvoa tuottamattomien vaiheiden poistamiseen. Orzenin ja Paderin mukaan arvovirta muokkaa syötteitä lopputuotokseksi arvotuotannon järjestelmän prosessien avulla, ja nämä prosessit vaativat resurssien hankkimista ja kuluttamista. Tyypillisiä yrityksen resursseja ovat esimerkiksi aika, raha, raaka-aineet ja työvoima. Se miten yritys päättää järjestää arvoketjun toiminnot ja hallita sitä, määrittävät tuotannosta aiheutuvat kustannukset ja tuotot. Tehokas arvovirta kuluttaa mahdollisimman vähän resursseja parhaan mahdollisen lopputuloksen aikaansaamiseksi. Toimiva arvovirta tuottaa myös aina samaa laatua joka on mitattavissa.
 
-Laadulla ei tarkoiteta ekplisiittisesti hyvää laatua, vaan kontrolloitua laatua valittujen mittareiden perusteella \citep{okaytannot}. Kilpailussa markkinoilla korostuu yrityksen valitsemat laatutekijät, koska tuotteiden ja palveluiden laatu rakentuu toimintaprosessien laadusta \citep{ohjelmistotuotanto, teollisuustalous}. Tämän periaatteen mukaan laatua ei voi myöskään lisätä prosessiin jälkikäteen, vaan liiketoimintaprosessi täytyy rakentaa valittujen laatutekijöiden perusteella. Laatutekijät valitaan mittaamaan liiketoiminnan tavoitteiden toteutumista. Esimerkiksi laadun asiakaslähtöinen määrittely antaa laadulle määrityksen joka mitataan asiakastarpeiden täyttämisessä onnistumisella (Sofigate). Määritelmä laadusta antaa periaatteen miten toimintaa johdetaan ja kehitetään. 
+Laadulla ei tarkoiteta ekplisiittisesti hyvää laatua, vaan kontrolloitua laatua valittujen mittareiden perusteella \citep{okaytannot}. Kilpailussa markkinoilla korostuu yrityksen valitsemat laatutekijät, koska tuotteiden ja palveluiden laatu rakentuu toimintaprosessien laadusta \citep{ohjelmistotuotanto, teollisuustalous}. Tämän periaatteen mukaan laatua ei voi myöskään lisätä asiakasprosessilla toimitettavaan tuotteeseen tai palveluun jälkikäteen, vaan prosessi täytyy rakentaa valittujen laatutekijöiden perusteella. Laatutekijät valitaan mittaamaan liiketoiminnan tavoitteiden toteutumista. Esimerkiksi laadun asiakaslähtöinen määrittely antaa laadulle määrityksen joka mitataan asiakastarpeiden täyttämisessä onnistumisella (Sofigate). Määritelmä laadusta antaa periaatteen miten arvotuotannon toimintaa johdetaan ja kehitetään. 
 
-Yrityksen valmiuksia parempaan ja tuottavampaan liiketoimintaan voidaan parantaa liiketoimintaprosesseja kehittämällä (Tuta). Prosessien kehittämisen tulisi olla jatkuvaa, ja se usein vaatii pienten askelten ottamista kerrallaan, koska muutoksilla saattaa olla hetkellinen tuottavuutta laskeva vaikutus. Sanotaankin, että prosessien kehittämisessä onnistuminen vaatii johdon sitoutumista, eli aikaa ja rahaa ottaa uusi prosessi käyttöön.
+Yrityksen valmiuksia parempaan ja tuottavampaan liiketoimintaan voidaan parantaa liiketoimintaprosesseja kehittämällä \citep{teollisuustalous, leanit, ohjelmistotuotanto}. Prosessien kehittämisen tulisi olla jatkuvaa, ja se usein vaatii pienten askelten ottamista kerrallaan, koska muutoksilla saattaa olla hetkellinen tuottavuutta laskeva vaikutus. Sanotaankin, että prosessien kehittämisessä onnistuminen vaatii ensisijaisesti johdon sitoutumista tukea muutosta, eli käytönnössä aikaa ja resursseja ottaa uusi prosessi käyttöön \citep{okaytannot}.
 
-Prosessien kehittämisen edellytyksenä on vahva prosessikulttuuri, jossa toiminta perustuu prosessien käyttöön, mittaamiseen ja niiden avulla johtamiseen. Ilman prosessikulttuuria olisikin keskityttävä prosessikulttuurin luomiseen. Vain paperilla olevia prosesseja on turha kehittää, koska niillä ei ole yhteyttä lisäarvon tuottamiseen.
+Prosessien kehittämisen edellytyksenä on prosessikulttuurin olemassaolo, jolloin voidaan olettaa toiminnan perustuvan prosessien käyttöön, mittaamiseen ja niiden avulla johtamiseen. Ilman prosessikulttuuria olisikin keskityttävä prosessikulttuurin luomiseen riittävissä määrin. Vain paperilla olevia prosesseja on turha kehittää, koska niillä ei ole yhteyttä lisäarvon tuottamiseen. \citep{teollisuustalous}
 
-Ideana liiketoimintaprosessien kehittämisessä joko vähentää resurssien käyttöä ja eliminoida tarpeettomia työvaiheita saman lopputuloksen saavuttamiseksi, tai onnistua löytämään uusia tapoja tuottaa asiakkaalle arvoa prosessin avulla. Digitaalisten palveluiden myötä avainasemassa on uusien palvelukonseptien kehittäminen ulkoisten sidosryhmien tarpeiden mukaan, jolloin sisäisten ja ulkoisten liiketoimintaprosessien oletetaan taipuvan nopeampiin muutoksen sykleihin. Tällöin liiketoimintaprosessien kehittämisen tulee olla jatkuvaa toimintaa, josta prosessin omistaja on vastuussa. (Sofigate) 
+Ideana liiketoimintaprosessien kehittämisessä joko vähentää resurssien käyttöä ja eliminoida tarpeettomia työvaiheita saman lopputuloksen saavuttamiseksi, tai onnistua löytämään uusia tapoja tuottaa asiakkaalle arvoa prosessin avulla. Digitaalisten palveluiden myötä avainasemassa on uusien palvelukonseptien kehittäminen ulkoisten sidosryhmien tarpeiden mukaan, jolloin sisäisten ja ulkoisten liiketoimintaprosessien oletetaan taipuvan nopeampiin muutoksen sykleihin. Tällöin liiketoimintaprosessien kehittämisen tulee olla jatkuvaa toimintaa. (Sofigate) 
 
-Mieti tätä kappaletta vielä:
-Liiketoimintaprosessien kehittämisen lähtökohtana on ymmärrys nykytilasta, tavoitetilasta ja näiden kahden tilan erojen tunnistamisesta. Näin pystytään järjestämään kehitystä vaativat osa-alueet priorisoiduksi listaksi. Ymmärrys nykytilasta sisältää ongelmakohtien ja tarpeettomien työvaiheiden kuvaamisen, jotka tulee poistaa tai tehostaa esimerkiksi automatisoimalla. Ymmärrys tavoitetilasta kuvaa uusia valmiuksia liiketoimintaprosessissa, joiden perusteella määritetään toiminnot, jotka tuovat tavoitteen vaatiman arvon. Nykyaikaisessa liiketoiminnassa korostuu ketterät toiminnot, jotka mahdollistavat uuden arvon luomisen nopeammin ja yksinkertaisemmin. (Sofigate)
+Liiketoimintaprosessien kehittämisen lähtökohtana on ymmärrys nykytilasta, tavoitetilasta ja näiden kahden tilan erojen tunnistamisesta. Näin pystytään priorisoimaan kehitystä vaativat osa-alueet. Ymmärrys nykytilasta sisältää ongelmakohtien ja tarpeettomien työvaiheiden kuvaamisen, jotka tulee poistaa tai tehostaa esimerkiksi automatisoimalla. Ymmärrys tavoitetilasta kuvaa uusia valmiuksia liiketoimintaprosessissa, joiden perusteella määritetään toiminnot, jotka tuovat tavoitteen vaatiman arvon. Nykyaikaisessa liiketoiminnassa korostuu ketterät toiminnot, jotka mahdollistavat uuden arvon luomisen nopeammin ja yksinkertaisemmin. (Sofigate)
 
-Ymmärrys nykytilasta on helppoa silloin kun prosessin aktivitetit ovat näkyviä, jolloin jokaisella toiminnolla on laatua mittaava komponentti. Tällöin prosessin tavoitten toteutumista voidaan seurata prosessin eri vaiheissa. Näin prosessin omistaja, joka on vastuussa kehittämisestä, huomaa poikkeamat ja voi parantaa ohjeistusta. Usein heikko ymmärrys nykytilasta on suurin este prosessin kehittämisessä, koska laatupoikkeamat havaitaan liian kaukana niiden alkuperäisestä aiheuttajasta. (kaiva lähde)
+Ymmärrys nykytilasta on helppo saavuttaa kun prosessin aktivitetit ovat näkyvillä, jolloin jokaisella toiminnolla on laatua mittaava komponentti \citep{ohjelmistotuotanto}. Tällöin prosessin tavoitten toteutumista voidaan seurata prosessin eri vaiheissa. Näin prosessin omistaja, joka on vastuussa kehittämisestä, huomaa poikkeamat ja voi parantaa ohjeistusta. Usein heikko ymmärrys nykytilasta on suurin este prosessin kehittämisessä, koska laatupoikkeamat havaitaan liian kaukana niiden alkuperäisestä aiheuttajasta \citep{teollisuustalous}.
 
 \subsubsection{Asiakasprosessi ohjelmistotuotannossa}
 
-Kuten aikaisemmin maninittiin (Tuotantotalous, Ohjelmistotuotanto), yrityksen työprosesseista muodostuu laatujärjestelmä, jonka mukaan pyritään laatutavoitteisiin. (Ohjelmistotuotanto, DevOps handbook) Ohjelmistotuotannossa laatujärjestelmän rooli korostuu erityisesti sen vuoksi, koska työprosessien toiminta on suurilta osin näkymätöntä, eikä laatua voi lisätä ohjelmistoihin tai järjestelmiin jälkikäteen. Tehtäessä ohjelmistoja korostuu hyvät toimintatavat, jotka on määritetty riittävän tarkasti tuottamaan tavoitteen mukaista laatua. Haaste onkin tehdä näkymättömistä työprosessin vaiheista riittävän näkyviä, jolloin prosessin eri vaiheita voidaan seurata ja arvioida niiden tehokkuutta. 
+Kuten aikaisemmin maninittiin (Tuotantotalous, Ohjelmistotuotanto), yrityksen työprosesseista muodostuu laatujärjestelmä, jonka mukaan pyritään laatutavoitteisiin. (Ohjelmistotuotanto, DevOps handbook) Ohjelmistotuotannossa laatujärjestelmän rooli korostuu erityisesti sen vuoksi, koska työprosessien toiminta on suurilta osin näkymätöntä, eikä laatua voi lisätä ohjelmistoihin tai järjestelmiin jälkikäteen. Tämän vuoksi laatua mittaava komponentti on oltava sisäänrakennettuna työprosessin vaiheisiin. Tehtäessä ohjelmistoja korostuukin hyvät toimintatavat, jotka on määritetty riittävän tarkasti tuottamaan tavoitteen mukaista laatua. Haaste onkin tehdä näkymättömistä työprosessin vaiheista riittävän näkyviä, jolloin prosessin eri vaiheita voidaan seurata ja arvioida niiden tehokkuutta. 
 
-Ohjelmistoja tai järjestelmiä tuottavan yrityksen prosessit riippuvat paljon siitä tavasta, jolla yrityksen liiketoimintaa toteutetaan. Ohjelmistotuotannon ydinprosesseihin kuuluu asiakasprosessi, tuotekehitysprosessi ja ylläpitoprosessi. Prosessit mukautuvat liiketoimintamallin mukaan. Jos yritys esimerkiksi tuottaa asiakaskohtaisia projekteja, on liiketoiminnan pääprosessina  asiakasprosessi, johon sisältyy tuotekehitysprosessi. Jos taas yritys tuottaakin pakettituotetta, joka on sama eri asiakkailla, on asiakasprosessi yksinkertaisempi. Tällöin tuotekehitys toimii omana prosessinaan. Koko ohjelmistotuotantoprosessi voidaan myös nähdä yhtenä asiakasprosessina, johon tuotekehitys ja ylläpito kuuluvat. Kuvassa \ref{fig:asiakasprosessi} on kuvattu asiakasprosessit eri liiketoimintamalleissa.
+Ohjelmistotuotannon ydinprosesseihin kuuluu asiakasprosessi, tuotekehitysprosessi ja ylläpitoprosessi. Liiketoimintamalli vaikuttaa oleellisesti miten nämä prosessit tukevat toisiaan. Asiakasprosessin osalta on kolme liiketoimintamallia, täysin asiakkaan tarpeiden pohjalta rakennettava ohjelmisto tai suoraan "hyllyltä" asiakkaalle myytävä ohjelmistotuote tai palvelu. Näiden kahden ääripään välimaastossa on niin kutsuttuihin ohjelmistoalustoihin tai ekosysteemeihin perustuva malli, jossa asiakkaalle paketoidaan ohjelmistotuote tai palvelu olemassaolevista ja räätälöidyistä komponenteista. Koko ohjelmistotuotantoprosessi voidaan myös nähdä yhtenä asiakasprosessina, johon tuotekehitys ja ylläpito kuuluvat. Kuvassa \ref{fig:asiakasprosessi} on kuvattu asiakasprosessit eri liiketoimintamalleissa.
 
 \begin{figure}[!h]
     \centering
@@ -437,21 +446,22 @@ Ohjelmistoja tai järjestelmiä tuottavan yrityksen prosessit riippuvat paljon s
     \label{fig:asiakasprosessi}
 \end{figure}
 
-On yleistä, että ohjelmistoyrityksen liiketoimintamalli sijoittuu kuvan \ref{fig:asiakasprosessi} a- ja c-kuvausten väliin. Tällöin tuotekehitys tuottaa perusmallin tuotteesta, joka paketoidaan asiakkaan toiveiden mukaan. Paketoinnilla tarkoitetaan ratkaisun kokoamista olemassa olevista komponenteista esimerkiksi konfiguroimalla. Paketointi voi myös sisältää asiakaskohtaisia muutoksia tai lisäyksiä, jolloin toiminta muuttuu asiakasprojektiksi. Yleisesti toimintaa tehostaakseen yritys pyrkii luomaan tuotteen joka on samanlainen asiakkaasta riippumatta. Usein todellisuus kuitenkin on, että asiakkaiden tarpeet vaihtelevat niin paljon, ettei asiakaskohtaiselta räätälöinniltä voi välttyä.
+On yleistä, että ohjelmistoyrityksen liiketoimintamalli sijoittuu kuvan \ref{fig:asiakasprosessi} a- ja c-kuvausten väliin. Tällöin tuotekehitys tuottaa perusmallin tuotteesta, joka paketoidaan asiakkaan toiveiden mukaan. Paketoinnilla tarkoitetaan ratkaisun kokoamista olemassa olevista komponenteista esimerkiksi konfiguroimalla. Paketointi voi myös sisältää asiakaskohtaisia muutoksia tai lisäyksiä, jolloin toiminta muuttuu asiakasprojektiksi. Yleisesti toimintaa tehostaakseen yritys pyrkii luomaan tuotteen joka on samanlainen asiakkaasta riippumatta. Usein todellisuus kuitenkin on, että asiakkaiden tarpeet vaihtelevat niin paljon, ettei asiakaskohtaiselta räätälöinniltä voi välttyä. Räätälöinnin määrää on kuitenkin hallittava, ja sen vuoksi tuotekehityksen on oltava mukana asiakasprosessissa. 
 
+Tuotekehitysprosessi
+Ylläpitoprosessi
+
+Jos hyviä toimintamalleja ei noudateta syntyy teknistä velkaa, joka johtaa projektin loppuvaiheessa aikataulutusongelmiin.
+
+Parempi aasinsilta:
 Ohjelmistotuotannossa kuten missä tahansa toiminnassa tapahtuu inhimillisiä virheitä, mutta jos työprosesseissa ei ole virheitä mittaavaa laatukomponenttia, on riski, että virhe jää näkymättömiin ohjelmiston sisälle, ja aiheuttaa ennalta odottamattomia virhetilanteita myöhemmin tuotannossa. Tässä vaiheessa virheen korjaaminen on haastavaa jos selkeää indikaatiota virheen alkuperästä ei ole nähtävissä, ja virheen korjaavaa ohjelmistopäivitystä tai julkaisua täytyy odottaa pitkään. Aikaisemmin olikin tyypillistä nähdä ohjelmiston mukana tuleva kirjanen joka antaa ehdotuksen yleisimmistä virhetilanteista palautumiseen. Tälläiset tapaukset ovat esimerkkejä laadunvarmistuksen toimimattomuudesta jossain työprosessin vaiheessa. Hyvän laatujärjestelmän yksi tavoitteista onkin estää inhimilliä erehdyksiä. Inhimillisten erehdysten estäminen raskastekoisella ja monipuolisia laatustandardeja valvovalla prosessilla ei useinkaan ole paras ratkaisu.
 
-muokkaa:
 Ohjelmistojen ja järjestelmien kanssa työskentelevillä ihmisillä on usein tapana suhtautua epäilevästi kankeisiin prosesseihin, ja sen johdosta ketterät menetelmät ovat kasvattaneet suosiotaan vastareaktiona kankealle prosessille. Hyvä työprosessi ohjelmistotuotannossa onkin mahdollisimman kevyt hallittavissa oleva prosessi. Ohjelmistotuotannossa hienoinkaan prosessi ei nimittäin korvaa tekijöiden ammattitaitoa. On kuitenkin täsmennettävä, että ohjemistotuotannon ammattilainen tehtävään soveltuvan prosessin kanssa päihittää aina toisen ammattilaisen, jolla ei ole hyvää prosessia. Ongelmaksi muodostuu juuri sopivan prosessin rakentaminen.
 
-Sen vuoksi uuden prosessin rakentamista uudelleen jokaista asiakastomitusta varten tulisi välttää. Prosesseille voi toki kohdistua hyvinkin erilaisia vaatimuksia tilanteesta riippuen. Laadunhallinnan järjestelmän tulisikin tarjota valmis pohja prosessille, joka tarjoaa sopivasti taipuvan rakenteen erilaisten tavoitteiden saavuttamiseksi. Sopivan prosessin rakentaminen onkin aina kompromissi.
+Sen vuoksi uuden prosessin rakentamista uudelleen jokaista asiakastomitusta varten tulisi välttää. Prosesseille voi toki kohdistua hyvinkin erilaisia vaatimuksia tilanteesta riippuen. Laadunhallinnan järjestelmän tulisikin tarjota valmis pohja prosessille, joka tarjoaa sopivasti taipuvan rakenteen erilaisten tavoitteiden saavuttamiseksi. Sopivan prosessin rakentaminen onkin aina kompromissi. 
 
+Digitaalisuuden korostuessa voi harva yritys sanoa että sen liiketoimintaprosesseissa ei korostuisi tietojärjestelmien käyttö. 
 
-luoma pohja prosessille ei kuitenkaan tulisi pakottaa kul
-
-kun samalla ohjelmistoyrityksellä voi olla eri projekteissa prosesseille hyvinkin erilaisia vaatimuksia, ei laadunhallintajärjestelmän pidä pakottaa kaikkia projekteja samaan muottiin. Tavallisesti prosessikuvaukset ovat melko väljiä, ja ne jättävät paljon harkintavaltaa projektisuunnitelman laatijalle. Toisaalt atarpeettoman väljästä kuvauksesta ei ole projektisuunnitelman laatijalle ohjeistamismielessä juurikaan apua. Yksi keino dokumentoida joukkovaihtoehtoisia prosesseja, joista sitten projektin luonteen mukaan vlaitaan sopivin.
-
-Yhteenvetona prosessien osalta voidaan kuitenkin todeta, että sopivan prosessin rakentaminen on aina kompromissi: liian löyhä prosessi ei ohjaa tarpeeksi, ja liian tiukka prosessi hjaa tekemistä liikaa. Siksi kokemattomat toteuttajat tarvitsevat usein tiukan ja ohjeistetun prosessin, kun taas kokeneille, ammattitaitoisille toteuttajille riittää yleisempi ohjeistus.
 
 Ohjelmistotuotannossa tavoitellaan ketterää, luotettavaa ja turvallista tuotetta. Kuitenkin käytännössä näiden kaikkien saavuttaminen on haastavaa. Usein tuotantoprosessia on vaikea määritellä ja mitata, jolloin prosessin hallitseminen on haastavaa. 
 
@@ -466,22 +476,21 @@ Tuotteen laadusta ei ole varmuutta: laadun formaali määrittely on vaikeaa/ ohj
 Ohjelmistoa on työlästä pitää kunnossa: ylläpito = kaikki mikä tapahtuu ohjelman ensimmäisen käyttöönoton jälkeen/ kustannukset ovat huomattavasti suuremmat kuin kehityskustannukset
 Projektin kulku on usein vaikeasti ennakoitavissa: projektin vaatiman työmäärän arviointi onnistuu harvoin/ teorian puuttuminen
 
-
 Yleisiä ongelmia ohjelmistotuotannossa.
 
-liiketoiminta heittää sian kehitykselle, jolloin kehitys joutuu lunastamaan lupauksen ja heittämään sian uudelleen operaatuoille. Downward spiral. Tiedä pullonkaulasi! 
-
-
+liiketoiminta heittää sian kehitykselle, jolloin kehitys joutuu lunastamaan lupauksen ja heittämään sian uudelleen operaatuoille. Downward spiral. Tiedä pullonkaulasi!
 
 Ehkä jotain lisäyksiä näkymättömästä luonteesta, josta on hyvä jatkaa seuraavassa kappaleessa. Esim. sen vuoksi on tärkeää kuvata prosessit mahdollisimman tarkasti?
 
 \subsubsection{Asiakasprosessin kehittäminen ja automatisoiminen}
 
 separate man from machine. https://www.lean.org/balle/DisplayObject.cfm?o=3161 
+Toimintojen jakamiseen liittyvät suunnittelupäätökset määrittävät, missä määrin annettu työ, tehtävä, toiminta tai vastuu on automatisoitu, ja missä määrin ne on annettu ihmisen suoritettavaksi... (iso..)
+
 Tiedätkö mitä työ on? kuuntele se kohta.
 
 Aloita manufacturing jne. 
-insinöörit eri aloilta ovat hiljalleen kypsyneet tuntemaan oman työnsä sisällön.
+insinöörit eri aloilta ovat hiljalleen kypsyneet tuntemaan oman työnsä sisällön. Devops handbook foreword!
 
 Sen automatisoimisella saavutetaan three ways hyödyt. limit waste etc
 
@@ -525,8 +534,18 @@ Lean
 DevOps
 \subsubsection{Automaatio asiakasprosessissa}
 https://devops.com/automation-versus-orchestration/ 
+Se että ODI-prosessi on automaattinen tarkoittaa että se rakennetaan komponenteista joihin automaatio on rakennettu sisään. Esim. onko order-prosessi rakennettu automaatio laatukomponentti mielessä? Onko toimitusprosessi rakennettu automaatio mielessä? Onko laskutusprosessi rakennettu automaatio mielessä?
+Onko meidän henkilökunta tilausten vastaanotossa 
+
+Koska Amazonilla ei ollut logistiikkaosaamista tai olemassaolevaa rakennetta, se joutui löytämään reitin muulla tavoin, verkkokauppana jossa niitä ei tarvittu. Rakentamaan disruptiivisen ominaisuuden prosesseihinsa.
+
+Kaikki esim 2-3-tason tyypit ovat vanhaa maailmaa, jonka läsnäolo ei auta näkemään mitä voisimme tehdä jos olisi pakko. Voisimmeko ulkoistaa toimitukset Zylincille kokonaan?
 
 Mistä työstä asiakasprosessi pääasiassa koostuu ohjelmistotuotannossa. Esimerkiksi mitkä ovat yleisiä kohtia johon uppoaa paljon työtunteja ja resursseja, mutta eivät tuota suurta arvoa? Esim infrastructure as a code.
+
+
+
+
 
 \subsection{Asiakaspalvelujärjestelmät}
 
@@ -534,8 +553,80 @@ Asiakaspalvelujärjestelmä ovat organisaation keskitetty toiminto, jossa käsit
 
 Asiakaspalvelujärjestelmän käyttäjää kutsutaan agentiksi. Agentti tarvitsee useissa tapauksissa edelleen fyysisen puhelimen ja työaseman, joskin useat uudet ratkaisut pyrkivät välttämään tarvetta tälle. Agenttien on pystyttävä ratkaisemaan asiakkaiden ongelma, ja siksi onkin järkevää, että agenteilla on erilaisia taitoja, joiden perusteella asiakaskontaktit ohjautuvat heille. Nykyään on myös tavallista, että organisaatioilla ei ole erikseen suurta asiakaspalveluorganisaatiota, ja yhä useampi työntekijä kuitenkin käyttää asiakaspalvelujärjestelmää agenttina. 
 
+Multitentant single tenant juttua cc-järjestelmistä.
 
-\subsection{Digitaalinen visio Telialla}
+\subsection{Automaatio digitaalisessa transformaatiossa}
+Kerro tässä kappaleessa miksi nyt ollaan tässä tilanteessa Telialla, että tässä yksikössä halutaan automatisoida Kontakti L:n asiakasprosessi. Miksi prosesseja pitää nyt automatisoida että voi säilyä kilpailukykyisenä? Koska DT mahdollistavat sen, ja kilpailijat yrittävät samaa, 
+
+Digitaalisten teknologioiden hyödyntäminen yrityksen liiketoimintaprosessissa alentaa liiketominnan käyttökustannuksia ja parantaa asiakaskokemusta  \citep{lamoureux, jungner}. Lamourexin mukaan yritykset, jotka omaksuvat uusien digitaalisten teknologioiden käytön liiketoiminnassaan, suoriutuvat markkinoilla kilpailijoitaan paremmin. Hän lisää, että digitaalinen transformaatio on yrityksille selviytymisen edellytys, ja kilpailukyky markkinoilla rakentuu relevanttien teknologioiden ja niiden mahdollistamien liiketoimintavalmiuksien tunnistamiseen ja rakentamiseen. 
+
+Digitaalisuus ja siihen liittyvä automaatio ja robotiikka ovat termeinä haastavia, koska niiden merkitys vaihtuu ajan kuluessa, eri ympäristössä ja yksilöiden mielissä. Ne myös kuvaavat monimutkaisia teknologisia edistysaskelia, joita on vaikea kuvata tyhjentävästi. Keskustelussa termit myös yksinkertaistuvat ja sekoittuvat toisiinsa. Onkin tärkeä muistaa, että juuri nyt niillä tarkoitetaan asioiden tekemistä aivan uudella tavalla, eikä vain automaation tai muun uuden teknologian käyttämistä nykyisissä prosesseissa. Mooren \citeyearpar{susanmoore} mukaan kyse on uuden arvon luomisesta, eikä vain parannuksista vanhaan. Hän täsmentää, että automaatio ei vähennä ihmistyön määrää, vaan ihmistyö kohdentuu luovien ratkaisujen tekemiseen teknologian avulla. Teknologia valjastetaan luomaan yksilöllistä arvoa ihmisille \citep{jungner, susanmoore}.
+
+Digitaalisuus itsessään ei ole mikään uusi asia. Digitaalisten teknologioiden kehitys alkoi tietokoneen keksimisestä ja yleistymisestä. Internetin myötä tietokoneet ovat yhteydessä toisiinsa ja näin tieto on tarjolla paikasta ja ajasta riippumatta. Pilviteknologioiden myötä on mahdollista käyttää lähes rajaton määrä laskentatehoa ja tallennustilaa. Tietoliikenneyhteyksien kehittymisen myötä tietoa on mahdollista siirtää paikasta toiseen yhä nopeammin. Se mitä digitaalinen tarkoittaa, muuttuu edelleen kun aikaa kuluu. Tässä työssä digitaalisilla teknologioilla tarkoitetaan nimenomaan pilvestä saatavilla olevaa laskenta- ja tallennuskapasiteettia, sekä Internet-teknologioita, joiden avulla tietokoneet ovat yhteydessä toisiinsa. Tämä digitaalisuuden aalto on hyödyllinen monilla tavoin. 
+
+Jungnerin \citeyearpar{jungner} mukaan hyötynä digitaalisuudessa on reaalimaailman asian muuttuminen tietokoneen ymmärtämään binäärimuotoon, jolloin tietokoneen laskentatehoa ja tallennustilaa voidaan käyttää todellisen maailman ilmiöiden seuraamiseen, ymmärtämiseen ja synnyttämiseen. Tällöin voidaan rakentaa työvälineitä mallintamaan reaalimaailman ilmiöitä tietokoneen maailmaan, siirtää reaalimaailman vuorovaikutusta tietokoneiden maailmaan ja avata tietokoneille tie toimia suoraan reaalimaailmassa. Teknologian kehitys mahdollistaa uusien toimintamallien syntymisen, joiden avulla yhä monimutkaisempia reaalimaailman asioita voidaan mallintaa tietokoneelle.
+
+\subsubsection{Digitaalinen visio}
+
+Lamourex \citeyearpar{lamoureux} kertoo, että yritys voi hyödyntää digitaalisen teknologian työvälineitä kehittääkseen tuotteita ja palveluita, tehokkaampia prosesseja ja asiakaskokemusta. Hänen mukaansa digitaalinen transformaatio tarkoittaa kaikkien näiden komponenttien muuttamista suurilta osin digitaalisiksi. Tällöin itse tuote tai palvelu on virtuaalinen, se ostetaan virtuaalisesta kanavasta jolloin koko asiakaspolku on virtuaalinen. 
+
+Transformaation vaatimuksena onkin reaalimaailman toimenpiteen arvoa tuottavan osan muuntaminen tietokoneen luettavaksi ja arvotuotannon kehittäminen digitaalisessa maailman ehdoilla. Tämä vaatiikin reaalimaailmassa olevien toimintamallien pilkkomista, uudelleen järjestämistä ja karsimista \citep{leanit}. Suurin este transformaatiossa onkin organisaation vakiintunut tapa toimia, jolloin kulttuuriset näkymättömät tavat eivät sovellu digitaaliseen maailmaan \citep{jungner, lamoureux}.
+
+Jungner \citeyearpar{jungner} kertoo tietokoneiden roolin korostuvan reaalimaailmassa, joka johtaa tehokkaampaan tapaan toimia. Monenlainen toiminta siirtyy tietokoneen suoritettavaksi. Tämän myötä kokonaiset toimialat uudistuvat ja myös koko yhteiskunta. Jungner käyttää esimerkkinä pankkialaa, joka käy läpi suurta muutosta, jossa palveluiden ylläpitäminen vaatii murto-osan siitä työvoimasta mitä aikaisemmin tarvittiin. Toisaalta pankkipalvelut ovat laajempia kuin aikaisemmin. Jungner alleviivaakin, että ei-digitaalisella tavalla toimiessa nykyinen pankkitoiminta vaatisi koko Suomen kansan työpanoksen. Lamourex \citeyearpar{lamoureux} korostaa, että
+uusien teknologioiden hyödyntäminen ei ole vaihtoehto, vaan selviytymisen edellytys.
+
+Jungner \citeyearpar{jungner} puhuu talouden ekosysteemin luovan tuhon kiihtymisestä nopeutuvan digitaalisuuden vuoksi, jossa vanhat yritykset, tuotteet, palvelut, tavat ja ammatit häviävät uusien tuottavampien sovellusten tieltä. Uusissa ammateissa työtavat muuttuvat hyödyntämään verkostoneituneita työvälineitä, ja tiedon hyödyntäminen tehostuu, jolloin innovaatioiden sykli nopeutuu. 
+
+Lamourexin \citeyearpar{lamoureux} mukaan digitaalisten teknologioiden hienostuneisuus ja lukumäärä kasvaa innovaatioiden syklin nopeuduttua. Tämän myötä myös käyttötavat moninkertaistuvat. Uusien teknologioiden ja niiden käyttötapojen tehokkaalla hyödyntämisellä on mahdollista saada aikaan yhä isompia tuloksia. Pienikin toimija voi vallata siivun markkinasta isolta toimijalta tehokkaasti kohdennetulla ja ketterällä ratkaisulla. Lamourex \citeyearpar{lamoureux} puhuu disruptoinnista, jossa haastetaan vallitseva tila uudella radikaalilla tavalla, joka tuhoaa vanhaa ja luo uutta nopeasti. Hän tuo vahvasti esiin, että disruptointi ei ole vain pienten ja ketterien organisaatioiden yksinoikeus, sillä myös suuryritys voi disruptoida markkinoita. Usein suuryrityksellä onkin etulyöntiasema olemassaolevien prosessien muodossa. Kokeilujen aloittamista tai onnistumista kuitenkin usein heikentää selkeän vision puuttuminen uusien teknologioiden hyödyntämisestä, missä nopea kokeilu on valttia. Lamourex tarjoaa tähän jatkuvan korkean tason viitekehyksen toimintamallina digitaalisen teknologian hyödyntämiseen.
+
+
+
+mutta kokeiluja estää selkeän vision puuttuminen uusien teknologioiden hyötyjen tunnistamisessa.
+
+Lopeta kappale siihen että viahtoehtoja ei juuri ole jos tulevaisuudessa haluaa olla olemassa.
+
+
+tieto lähteä kokeilemaan rohkeasti uusia ideoita, mutta ilman selkeää visiota uusien teknologioiden käytöstä, ei hyödyt kotiudu koskaan. 
+
+Disruptointi ei kuitenkaan ole vain pienten ja ketterien toimijoiden etuoikeus, vaan isolla toimijalla on jopa paremmat edellytykset disruptointiin. Se kuitenkin vaatii kulttuuria joissa uusia villejä kokeiluja on mahdollista tehdä jatkuvalla syötöllä, mutta silti harkiten. Iso toimija joka pystyy nopeuttamaan omaa arvotuotannon sykliä hyädyntämällä digitaalisia teknologioita hallitsee digitaalisuuden seuraavaa aikakautta. Perässä hiihtäminenkään ei ole kannattavaa sillä yriksen olemassaolon edellytys tulee digitaalisen maailman kautta. Olemassaolo on mahdollista vain käyttämällä digitaalisia teknologioita liiketoiminnassa, mutta oikeasti kilpaileminen vaatii kykyä nopeuttaa innovaatiosykliä riittävästi.
+
+
+
+
+
+Transformaatio onkin monen yrityksen listalla kärkihankkeena jne.
+
+jatka tästä<
+
+
+Operaattorin näkökulmasta digitalissaa
+
+
+
+Yrityksen näkökulmasta teknologialla parannetaan tuotteita, sisäisiä prosesseja ja asiakaskokemusta. Pelkästään teknologian käyttäminen ei kuitenkaan tuo hyötyä liiketoimintaan. Valitulla teknologialla täytyy olla potentiaalia kasvattaa kilpailukykyä määrätyssä aikajaksossa, ja investoinnin tulee ottaa riskit huomioon. Uusia teknologioita tulee ja menee, ja siksi tulisikin olla kykyjä tutkia useampia potentiaalisia teknologioita saman aikaisesti. Ajankohdan tulee myös olla sopiva, koska teknologiat saattavat vanhentua luultua nopeammin ja liian aikaisin tehty investointi uuteen teknologiaan saattaa heikentää kilpailuedun saamista. Teknologian hyödyntämisessä vaaditaan myös selkeä kuva liiketoimintavalmiudesta joka halutaan rakentaa sen avulla. Uusien teknologioiden käytön omaksuminen liiketoiminnan tavoitteiden saavuttamiseksi ei myöskään tapahdu itsestään. Teknologian käyttäminen kilpailuedun saavuttamiseksi markkinoilla onkin organisaation opittu taito. Eli organisaation sisäisten ja ulkoisten tavoitteen kannalta relevanttien sidosryhmien kyky tehdä yhteistyötä. Tämän kyky on vaikeampi rakentaa organisaatioissa, joissa tavoitteen kannalta relevantteja sidosryhmiä on useampia. Suurempi sidosryhmien määrä vaikeuttaa tiedon vaihtamista ja kommunikointia. Uuden teknologian hyödyntäminen kilpailiedun saavuttamiseksi vaatiikin toimintamallin muuttumista, usein yksinkertaisempaan suuntaan.
+
+
+
+
+
+Digitaalisen teknologian myötä automaatio on scriptausta apeja jne pilvessä jne. Jungner puhui kaikki on avointa
+
+
+
+Digitalisaation työkalupakki(aoit, rpa, ...)
+Digitalisaation menetelmät (devops, lean, kaikki on avointa...)
+Muutosvoimat operaattorin näkökulmasta(doing digital right)
+Telain strategia vastaamaan muutosvoimiin
+Muutosvoimat
+multi single?
+Telian/operaattoreiden haasteet muutosvoimissa
+- Teknologian keihäänkärjet, order to cash
+Ratkaisuja tarjoavat 
+
+teollisuudessa disruptioitiin ja sitten lähti muutos leaniin.
+Automaatio ja DevOps tulee täällä. Tämän vuoksi jne.
+
+Multi-single asiaa myös
 
 \citep{lamoureux}
 
@@ -576,7 +667,17 @@ Ydinprosessit Telialla ja ODI prosessi niiden joukossa. Minkälaista tehtävää
 \section{Tutkimusaineisto ja -menetelmät}
 %\section{Materials and methods}
 
+ODI-prosessi koostuu osaprosesseista ja niiden komponenteista. Mihin laatuvaatimuksiin nykyiset komponentit ovat rakennettu?
+
+
+
+MIssä liiketominta casessa automaatiota tulisi hyödyntää. 
+
 Tutki miten ODI-prosessi rakennetaan Telialla juuri nyt.
+
+Tutki valmiita komponentteja ja kun niitä yhdistellään tutki mahdollisia manuaalisia työvaiheita jotka ovat riski.
+
+Koko business case asiaakspalvelujärjestelmätoimituksissa.
 
 Tässä osassa kuvataan käytetty tutkimusaineisto ja
 tutkimuksen metodologiset valinnat, sekä
@@ -589,6 +690,8 @@ kerrotaan tutkimuksen toteutustapa ja käytetyt menetelmät.
 Miten ODI-prosessi rakennetaan Telialla???
 Nykyinen laatujärjestelmä ODI-prosessin tekemiseen ei ole määritelty, vaan tuotepäälliköiden päässä.
 Laatujärjestelmä on ODi-labraus. Miten se vastaa laatumittauksesta?
+
+Pitää osata tuotteistaa jotain sellaista joka vastaa asiakastarvetta ja kun siitä saadaan kokemusta lyhenee läpimeno ja opitaan mestareiksi tehostamisessa. Tämän jälkeen voidaan sanoa mitä kannattaa automatisoida. Siihen robotisaatiomalliin on saatava vihreät valot. Eli on osattava vastata kysymyksiin tarkasti!
 
 
 Tässä osassa esitetään tulokset ja vastataan tutkielman alussa
