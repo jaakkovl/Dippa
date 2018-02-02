@@ -426,13 +426,12 @@ Tämä case study tutkii sitä miten prosessin omistajan näkökulmasta (tuoteke
 %% In a thesis, every section starts a new page, hence \clearpage
 \clearpage
 
-\section{Taustatieto}
-
-
+\section{Toimintamallit liiketoimintaprosessin automatisoinnissa}
 
 % \section{Background}
-\subsection{Asiakasprosessin automatisoiminen ohjelmistotuotannossa}
-Kerro tässä kappaleessa mitä asiakasprosessilla tarkoitetaan ohjelmistotuotannossa, ja mitä sen kehittäminen automaattiseksi tarkoittaa. Taustoita myös miksi se haluttaisiin automatisoida. \\
+
+Kappaleen tarkoitus: Kertoa mitä asiakasprosessilla tarkoitetaan ohjelmistoja ja järjestelmiä tuottaessa, miten tärkeä laadukas liiketoimintaprosessi on ja mitä prosessin automatisoiminen tarkoittaa. \\
+
  
 Ihminen pyrkii luomaan työkaluja arjen tehtävien helpottamiseksi, ja käytännön kautta ihminen oppii miten työkalua voisi kehittää, kertoo Groover \citeyearpar{groover}. Monimutkaisessa yhä useampia ihmisiä vaativissa toimenpiteissä, kuten ohjelmistotuotannossa, tarvitaan määriteltyjä työkaluja yhteistyölle, eli tapoja toimia yhteisen tavoitteen saavuttamiseksi. \citeauthor{leanit} \citeyearpar{leanit} kertovatkin, että toimintatavat on kannattava määritellä prosessiksi, koska tällöin voidaan standartisoida systemaattinen tapa saavuttaa päämäärä. \citeauthor{leanit} toteavat, että hyötynä prosessien määrittelemisessä ja kuvaamisessa on toiminnan nykytilan havaitseminen, jolloin toimintatapoja voidaan kehittää muuttuvien tarpeiden mukaisesti.
 
@@ -442,7 +441,7 @@ Se mikä on sopiva tapa ja tarkkuus määrittää prosessi vaihtelee tapauskohta
 
 Lamourexin \citeyearpar{lamoureux} mukaan digitaalisten teknologioiden jatkuva kehitys nopeuttaa innovaatioiden sykliä, jolloin liiketoiminnan tarpeet muuttuvat useammin. Prosessien, jotka vastaavat tarpeen täyttämisestä, täytyy myös mukautua nopeammin tapahtuviin muutoksiin. \cite{teollisuustalous} mukaan laadun jatkuva kehittäminen yrityksen tuotantoprosesseissa johtaa tehokkaampaan asiakasarvon luomiseen vähentämällä asiakasarvoa tuottamattomia työvaiheita ja parantaa näin työn tuottavuutta. \cite{ohjelmistotuotanto} mukaan ihmistyövoima on keskimäärin suurin kustannustekijä ohjelmistotuotannossa. \cite{teollisuustalous} tuovatkin esiin, että automaation käyttöä perustellaankin usein tuottavuuden ja laadun parantumisella. Automaation avulla tuotteita ja palveluita voidaan kehittää nopeammin ja tehokkaammin.
 
-\subsubsection{Asiakasprosessi on liiketoimintaprosessi}
+\subsection{Asiakasprosessi liiketoimintaprosessina}
 
 Kuten \cite{teollisuustalous} mainitsivat, liiketoimintaprosessit ovat yrityksen systemaattiset ja standartoidut työkalut niiden tavoitteiden saavuttamiseksi, jonka vuoksi yritys on olemassa. \cite{ohjelmistotuotanto} kertovat, että yrityksen tavoite on ratkaista sen asiakkailla oleva ongelma ja tuottaa ongelman ratkaisemalla lisäarvoa. Siksi heidän mukaansa onkin luonnollista kutsua ohjelmistotuotannossa liiketoiminnan ydinprosessia asiakasprosessiksi.
 
@@ -469,7 +468,7 @@ Yrityksen valmiuksia parempaan ja tuottavampaan liiketoimintaan voidaan parantaa
 
 \cite{teollisuustalous} mukaan suurin este prosessien kehittämiselle on usein heikko ymmärrys nykytilasta, jolloin ei toivotulla tavalla toimivan prosessin laatupoikkeamat havaitaan liian kaukana niiden alkuperäisestä aiheuttajasta. \cite{ohjelmistotuotanto} mukaan ymmärrys prosessin nykytilasta on helppo saavuttaa silloin kun prosessin aktiviteetit ovat selkeästi näkyvillä, ja jokaisella toiminnolla on laatua mittaava komponentti. Heidän mukaansa tällöin prosessin tavoitteen toteutumista voidaan seurata prosessin eri vaiheissa, ja laatupoikkeamien aiheuttaja havaitaan nopeasti. Prosessin omistaja, joka vastaa prosessin kehittämisestä, voi näin kohdistaa kehitystoimenpiteet laatupoikkeamien aiheuttajaan. 
 
-\subsubsection{Asiakasprosessi ohjelmistotuotannossa}
+\subsection{Ohjelmistotuotannon liiketoimintaprosessit}
 
 Kuten \cite{teollisuustalous} kertoivat, tuotteiden ja palveluiden laatu rakentuu yrityksen toimintaprosessien laadusta, ja tämän periaatteen mukaan laatu pitää suunnitella ja rakentaa yrityksen toimintaprosesseihin. \cite{ohjelmistotuotanto, devops} mukaan ohjelmistotuotannossa työprosessien laatu korostuu erityisesti sen vuoksi, koska työprosessien toiminta on suurilta osin näkymätöntä, eikä laatua voi lisätä ohjelmistoihin tai järjestelmiin jälkikäteen. \citeauthor{devops} jatkaakin, että ohjelmistotuotannossa laatua mittaava ja palautekontrollin sisältävä komponentti on sisällytettävä työprosessin eri vaiheisiin. \cite{okaytannot} mukaan tehtäessä ohjelmistoja korostuukin hyvät toimintatavat, jotka on määritetty tuottamaan tavoitteen mukaista laatua. \cite{ohjelmistotuotanto} sanookin, että prosessikehityksen näkökulmasta onkin haaste tehdä ohjelmistotuotannon työprosessien vaiheista riittävän näkyviä, jolloin prosessin eri vaiheita voidaan seurata ja arvioida niiden tehokkuutta.
 
@@ -518,7 +517,7 @@ Tuotteen määrittely on ongelmallista: asiakas ei oikein tiedä mitä haluaa/ m
 Tuotteen laadusta ei ole varmuutta: laadun formaali määrittely on vaikeaa/ ohjelmiston kattava testaus on käytännössä mahdotonta
 Ohjelmistoa on työlästä pitää kunnossa: ylläpito = kaikki mikä tapahtuu ohjelman ensimmäisen käyttöönoton jälkeen/ kustannukset ovat huomattavasti suuremmat kuin kehityskustannukset
 
-\subsubsection{Asiakasprosessin kehittäminen}
+\subsection{Liiketoimintaprosessien kehittäminen ohjelmistotuotannossa}
 
 \textbf{Business process management - Prosessijohtaminen}
 
@@ -642,7 +641,7 @@ and IT investments.
 
 
 DevOps
-\subsubsection{Automaatio asiakasprosessissa}
+\subsection{Tavoitteena automaatio}
 
 Monilla aloilla menestyksen perusedellytyksenä on tehokkaan automaation soveltaminen. 
 
@@ -665,12 +664,12 @@ Koska Amazonilla ei ollut logistiikkaosaamista tai olemassaolevaa rakennetta, se
 
 Kaikki esim 2-3-tason tyypit ovat vanhaa maailmaa, jonka läsnäolo ei auta näkemään mitä voisimme tehdä jos olisi pakko. Voisimmeko ulkoistaa toimitukset Zylincille kokonaan?
 
+\subsection{Kappaleen yhteenveto}
+
 Mihin asti tuote tukee automaatiota on keskeinen kysymys?
 
-\subsection{Asiakaspalvelujärjestelmä ohjelmistotuotteena}
-
-Tuo esiin, että contact centerin pystytys on syytä tehdä huolellisesti koska se vaikuttaa yrityksen toimintaan isosti. Usein myös vasta käytännössä monet ongelmat selviävät.
-
+\section{Contact center ohjelmistotuotteena}
+Kappaleen tarkoitus: Kuvailla contact centereiden luonne ohjelmistotuotteena, minkälaisen ongelman ne ratkaisevat + tulevaisuuden trendejä: Integraatiot, omnichannel, CCaaS.\\\\
 \cite{ccgartner} kuvailevat contact center—infrastruktuuriin kuuluvan joukon tuotteita (välineitä, ohjelmistoja ja palveluita), joita tarvitaan puheluliikenteen ohjaamiseen ja erilaisen median välittäiseen. Tälläisiä ratkaisuja heidän mukaansa käyttävät erilaiset organisoidut kommunikaatiopalvelut. Kontaktit järjestelmässä voivat olla ihmisavusteisia tai automaattisia itsepalveluita, jotka käyttävät äänivalikoita ja puheentunnistusta. Kontaktilla viitataan Latva-Koiviston \citeyearpar{latvakoivisto} mukaan viestintään asiakkaan kanssa erilaisisten viestinnän kanavien kautta, joista tyypillisä esimerkkejä ovat: puhelin, Internet-sivut, sähköposti, pikaviestit, Web-chatit, sosiaalinen media ja mobiililaitteet.
 
 Contact centerit vaativat useiden toimintojen, arkkitehtuurien ja palveluiden yhteistoimintaa, kertovat \cite{ccgartner}. Heidän mukaansa markkinoilla on kolmen tapaista arkkitehtuurista lähestymistapaa, yksittäisiä integroitavissa olevia täsmäratkaisuja, laajoja toimintoja tarjoavia sarjatuotteita ja palvelupohjaisia ratkaisuja. He lisäävät, että näitä ratkaisuja tarjotaan piirikytkentä perusteisena puhelinverkkoratkaisuna, IP-perusteisena ratkaisuna tai näiden kahden yhdistelminä. 
@@ -679,30 +678,33 @@ Contact centerit vaativat useiden toimintojen, arkkitehtuurien ja palveluiden yh
 
 Contact center-ratkaisu ja siihen liittyvä arkkitehtuuri hankitaan tavallisesti yksittäiseltä toimijalta, koska ratkaisun hallinta on tällöin yksinkertaisempaa ja integraatiomahdollisuudet ovat laajempia, kertovat \cite{ccgartner}. Siksi isoissa hankkeissa suositaankin johtavien toimittajien kokonaisratkaisuja, jotka käsittävät toimittajien omia ja strategisten kumppaneiden ratkaisuja. \cite{bernier} kertookin, että itse contact center on vain puolet kokonaisratkaisusta, koska ratkaisun hyöty rakentuu integraatioista muihin yrityksen järjestelmiin, kuten asiakastiedon- ja työnkulunhallintaan.
 
-\subsubsection{Teknologinen näkökulma} 
-
-Tee ehkä taulukko mieluummin? ja myös ehkä eri kokoisten yritysten tarpeesta.
+\subsection{Teknologinen näkökulma} 
 
 Perinteisiä asiakaspalvelujärjestelmän komponentteja ovat automaattinen puheluiden jakelu (ACD), tietokoneen ja puhelinliikenteen integraatio (CTI), äänivalikko (IVR), ennustava puheluiden valinta (predictive dialing), reaaliaikainen monitorointi, raportointi ja analytiikka.
 
-Asiakaspalveluratkaisut ovat historiallisesti olleet luonteeltaan järjestelmiä, jotka on asennettu on-premises ratkaisuna yrityksen omaan konesaliin, kertovat \cite{vcc}. Tämä johtuu osittain siitä, että ne syntyivät aikana ennen Internettiä, jolloin kaikki liiketoiminnassa tarvittavat järjestelmät oli asennettava sinne missä liiketoimintaa harjoitettiin. Edelleenkin on asiakaspalvelujärjestelmä saatetaan osittain asentaa on-premises ratkaisuna esimerkiksi yrityksen omaan pilvialustaan, kertoo \cite{weiner}. Tällöin järjestelmä ja siihen liittyvä infrastruktuuri asennetaan yrityksen omaan konesaliin, ja yritys tai kumppani vastaa ylläpidosta. Etuna yrityksen näkökulmasta on kontrolli integroituihin järjestelmiin, niiden sisältämään dataan ja kustomointi omien tarpeiden mukaan. Selkeä haitta on isot investointikustannukset, ja rajoitetut mahdollisuudet integraatiolle ja tyypillisesti palvelutaso on heikompi kuin virtuaalisesti tuotetussa ohjelmistopalvelussa. 
+Asiakaspalveluratkaisut ovat historiallisesti olleet luonteeltaan järjestelmiä, jotka on asennettu on-premises ratkaisuna yrityksen omaan konesaliin, kertovat \cite{vcc}. Tämä johtuu osittain siitä, että ne syntyivät aikana ennen Internettiä, jolloin kaikki liiketoiminnassa tarvittavat järjestelmät oli asennettava sinne missä liiketoimintaa harjoitettiin. Edelleenkin on asiakaspalvelujärjestelmä saatetaan osittain asentaa on-premises ratkaisuna, kertoo \cite{weiner}. Tällöin järjestelmä ja siihen liittyvä infrastruktuuri asennetaan yrityksen omaan konesaliin, ja yritys tai kumppani vastaa ylläpidosta. Etuna yrityksen näkökulmasta on kontrolli integroituihin järjestelmiin, niiden sisältämään dataan ja kustomointi omien tarpeiden mukaan. Selkeä haitta on isot investointikustannukset, ja rajoitetut mahdollisuudet integraatiolle ja tyypillisesti palvelutaso on heikompi kuin virtuaalisesti tuotetussa ohjelmistopalvelussa. 
 
-\cite{vcc} olivat jo vuosia sitten eri mieltä. He näkivät jo silloin, että tulevaisuus on monikanavainen ja siksi on-premises asiakaspalvelujärjestelmän ei ole mahdollista tuottaa investointia takaisin. Syynä tähän oli heidän mukaansa se, että on-premises ratkaisun toimintojen kehittäminen olisi liian iso kustannus, ja investoinnit tulisi kohdentaa virtuaalisen ohjelmistopalveluna tuotetun asiakaspalvelujärjestelmän toimintojen kehittämiseen Internet-teknologioiden avulla. Virtuaalisessa asiakaspalvelujärjestelmässä yritys maksaa palveluntarjoajalle kuukausittaista tai vuosittaista maksua palvelun ylläpidosta palveluntarjoajan konesalissa. Käyttöönotto vaatii tässäkin investointia, joka on pilvi- tai selainpohjaista ratkaisua kalliimpi. Agentti käyttää järjestelmää esimerkiksi puhelinverkon tai VoIP-teknologian avulla mistä tahansa lokaatiosta. Ainoa vaatimus on verkkoyhteys ja työasema tarvittavine sovelluksineen. Tämän ratkaisun heikkous on palveluntarjoajan rajaamat  mahdollisuudet integraatiolle, kustomoinneille ja versionpäivityksille, jotka vaativat usein lisäinvestointeja \citep{talkdesk}.  
+\cite{vcc} olivat jo vuosia sitten eri mieltä. He näkivät jo silloin, että tulevaisuus on monikanavainen ja siksi on-premises asiakaspalvelujärjestelmän ei ole mahdollista tuottaa investointia takaisin. Syynä tähän oli heidän mukaansa se, että on-premises ratkaisun toimintojen kehittäminen olisi liian iso kustannus, ja investoinnit tulisi kohdentaa virtuaalisen ohjelmistopalveluna tuotetun asiakaspalvelujärjestelmän toimintojen kehittämiseen Internet-teknologioiden avulla. Virtuaalisessa asiakaspalvelujärjestelmässä yritys maksaa palveluntarjoajalle kuukausittaista tai vuosittaista maksua palvelun ylläpidosta palveluntarjoajan konesalissa. Käyttöönotto vaatii tässäkin investointia, joka on pilvi- tai selainpohjaista ratkaisua kalliimpi. Agentti käyttää järjestelmää esimerkiksi puhelinverkon tai VoIP-teknologian avulla mistä tahansa lokaatiosta. Ainoa vaatimus on verkkoyhteys ja työasema tarvittavine sovelluksineen. Tämän ratkaisun heikkous on palveluntarjoajan rajaamat  mahdollisuudet integraatiolle, kustomoinneille ja versionpäivityksille, jotka vaativat usein lisäinvestointeja \citep{talkdesk}. Tämä SaaS-malli on ollut yleinen Suomen markkinoilla.
 
 Asiakaspalvelujärjestelmiä toimitetaan myös pilvipalveluna, jolloin ratkaisu tarjotaan Internetin yli ohjelmistona tai selainpohjaisena ratkaisuna päätelaitteelle. Keskeinen hyöty pilvipalvelumallissa on multitenattisuus, jolloin käyttäjät jakavat palvelun resursseja ja ovat siten kustannustehokkaita palveluntarjoajan näkökulmasta. Tämän myötä myös palvelutaso on korkea, koska kaikki on kahdennettu. Kustannukset palvelun käyttöönotossa ja käytössä ovat huomattavasti muita pienemmät. Käyttöönottoon kuluva aika on myös minimaalinen sisältäen ainoastaan tarvittavat konfiguraatiot järjestelmään. Pilvipalveluissa hyötynä on myös se, että ne integroituvat dynaamisemmin muiden selain- ja pilvipohjaisten ratkaisujen kanssa ja ne ottavat tietoturvan, yksityisyydensuojan ja palvelutason parhaiten huomioon. Selainpohjaisissa ratkaisuissa suurin haitta on se että kaikki toiminnot tapahtuvat selaimessa, jolloin sen maailman rajoitukset ovat läsnä. \citep{talkdesk}
 
-Virtuaalisten ja pilvipalvelupohjaisten asiakaspalveluratkaisujen myötä yhä pienemmät yritykset voivat ottaa käyttöön järjestelmän.
+\cite{ccgartner} mukaan contact center-ratkaisut ovat perinteisesti olleet laitteistokeskeisiä, mutta yhä useammat toimittajat pyrkivät tuottamaan tuotteistettuja valmiiksi konfiguroituja perusratkaisuja, joihin on helppo integroitua. Keskeinen ajuri on tarjota erilaisia valmiita ratkaisukokonaisuuksia niiden hankkimisen, konfiguroinnin ja toimittamisen yksinkertaistamiseksi. Tämän vuoksi pilvipalvelupohjaiset Contact Center as a Service-ratkaisut nostavat suosiotaan. Pilvipalvelumallin tehokas hyödyntäminen contact center-ratkaisuissa on mahdollistanut sen, että yhä pienemmät yrityksen voivat ottaa ratkaisun käyttöön kustannustehokkaasti. Esimerkiksi Amazon tarjoaa tälläistä palvelua niin sanottuna Serverless-palveluna, jossa kustannus perustuu toteutuneeseen palvelun käyttöön.
 
-\subsubsection{Tulevaisuus}
+\subsection{Contact centerin rakentaminen}
+
+\subsection{Tulevaisuus}
+
+Jatkossa yrityksen luovat uusia digitaalisia palveluita asiakaskokemuksen kehittämiseksi. Tämä ennen kaikkea muuttaa tapaa jolla palveluita tuotetaan ja siten myös asiakaskohtaamiset muuttuvat. Automaattiset itsepalvelukanavat ovat contact centeriin verrattuna halvempia ylläpitää, ja contact centerin ongelmana on ollut asiakaspolun katkeilu ja siten sillä on ollut heikentävä vaikutus asiakaskokemukseen. Itsepalvelukanavien hyödyntäminen arkipäiväistyy monessa transaktiivisessa toiminnossa, ja agentti vapautuu enemmän arvoa luoviin tehtäviin. Asiakaspolun merkitys kasvaa tällöin ja siten siitä kerättävää dataa on hyödynnettävä, jotta tiedetään mitä asiakas haluaa hänen ollessa yhteydessä. Puhutaan saumattomasta asiakaskokemuksesta, jossa päästään lähemmäs intiimiä vuorovaikutusta, joka menetettiin siirrettäessä palveluita verkkoon. (deloitte)
 
 Seuraavassa vaiheessa asiakkaat odottavat saumatonta vuorovaikutusta palveluntarjoajilta koska tahansa ja miten tahansa.
 Asiakkaat haluavat asioida viestimällä ei soittamalla.
 Chatbotit tekevät tuloaan.
-Tekoälyn avulla tier 1 yhteydenotot vähenevät.
+Tekoälyn avulla tier 1 yhteydenotot vähenevät järjesstelmän älykkyys kasvaa tukitoiminnoissa.
 
-\subsection{Automaatio digitaalisessa transformaatiossa}
-Kerro tässä kappaleessa miksi nyt ollaan tässä tilanteessa Telialla, että tässä yksikössä halutaan automatisoida Kontakti L:n asiakasprosessi. Miksi prosesseja pitää nyt automatisoida että voi säilyä kilpailukykyisenä? Koska DT mahdollistavat sen, ja kilpailijat yrittävät samaa
-Mitkä digitaaliset teknologiat tuovat automaatiota? Esim miten multitentant tuo automaatiota, multitentant pilvip perusajatus. Relevantti koska Telia kohdentaa uusien teknologieoiden hyödyntämisen sen keskeisimpiin liiketoimintaprosesseihin.
+\subsection{Kappaleen yhteenveto}
+
+\section{Teknologiat automatisaation taustalla}
+Kappaleen tarkoitus: Kuvailla miten digitaalista transformaatiota läpikäyvä yritys toimii, mitä tämä tarkoittaa operaattorin näkökulmasta ja mitkä teknologiat ovat tässä tuomassa automaatiota. Relevantti koska Telia kohdentaa uusien teknologieoiden hyödyntämisen sen keskeisimpiin liiketoimintaprosesseihin. \\\\
 
 Digitaalisten teknologioiden hyödyntäminen yrityksen liiketoimintaprosessissa alentaa liiketominnan käyttökustannuksia ja parantaa asiakaskokemusta  \citep{lamoureux, jungner}. Lamourexin mukaan yritykset, jotka omaksuvat uusien digitaalisten teknologioiden käytön liiketoiminnassaan, suoriutuvat markkinoilla kilpailijoitaan paremmin. Hän lisää, että digitaalinen transformaatio on yrityksille selviytymisen edellytys, ja kilpailukyky markkinoilla rakentuu relevanttien teknologioiden ja niiden mahdollistamien liiketoimintavalmiuksien tunnistamiseen ja rakentamiseen. 
 
@@ -712,7 +714,7 @@ Digitaalisuus itsessään ei ole mikään uusi asia. Digitaalisten teknologioide
 
 Jungnerin \citeyearpar{jungner} mukaan hyötynä digitaalisuudessa on reaalimaailman asian muuttuminen tietokoneen ymmärtämään binäärimuotoon, jolloin tietokoneen laskentatehoa ja tallennustilaa voidaan käyttää todellisen maailman ilmiöiden seuraamiseen, ymmärtämiseen ja synnyttämiseen. Tällöin voidaan rakentaa työvälineitä mallintamaan reaalimaailman ilmiöitä tietokoneen maailmaan, siirtää reaalimaailman vuorovaikutusta tietokoneiden maailmaan ja avata tietokoneille tie toimia suoraan reaalimaailmassa. Teknologian kehitys mahdollistaa uusien toimintamallien syntymisen, joiden avulla yhä monimutkaisempia reaalimaailman asioita voidaan mallintaa tietokoneelle.
 
-\subsubsection{Digitaalinen visio}
+\subsection{Digitaalinen visio}
 
 Lamourex \citeyearpar{lamoureux} kertoo, että yritys voi hyödyntää digitaalisen teknologian työvälineitä kehittääkseen tuotteita ja palveluita, tehokkaampia prosesseja ja asiakaskokemusta. Hänen mukaansa digitaalinen transformaatio tarkoittaa näiden osa-alueiden jalostumista digitaalisten teknologioiden avulla. Kaikkea ei kuitenkaan ole tarkoituksenmukaista digitalisoida kerralla, vaan jalostamisen tulisi hänen mukaansa aloittaa tunnistamalla teknologiat, joilla voidaan rakentaa liiketoimintavalmiuksia tärkeimpien pullonkaulojen ratkaisemiseen. Taulukossa \ref{tab:digkys} Lamourex esittää kysymykset, joihin digitaalisen vision antaa vastauksia.
 
@@ -736,7 +738,7 @@ Lamourexin \citeyearpar{lamoureux} mukaan digitaalisten teknologioiden hienostun
 
 Jungner \citeyearpar{jungner} pohtii, että puoliksi suunniteltu on digitaalisessa maailmassa tarpeeksi hyvin tehty. Hänen mukaansa käytännön kokeilut kumppaneiden ja asiakkaiden kanssa ovat nopein tapa selvittää mikä oikeasti toimii, eikä käyttää pitkää aikaa suunnitteluun. \citeauthor{devops} \citeyearpar{devops} on myös samaa mieltä: Maali liikkuu yhä nopeammin, ja siihen osuu varmemmin jos ampuu useammin ja pienemmissä erissä. Lamourex \citeyearpar{lamoureux} muistuttaa kuitenkin, että kokeiluja ohjaa digitaalinen visio uusien teknologioden tunnistaminen, joilla voi ratkaista liiketoiminnan tarpeita ja saada aikaan tuloksia. \citeauthor{gandhi} \citeyearpar{gandhi} mukaan ratkaisevaa on havaita, että digitaalinen investointi tuottaa arvoa vasta kun se on ratkaisuna tuottamassa arvoa. Kilpailussa ovat vahvoilla toimijat, jotka osaavat laittaa uudet ratkaisut työhön asiakkaiden ja muiden kumppaneiden kanssa.
 
-\begin{table}[]
+\begin{table}[h!]
     \centering
     \begin{tabular}{l}
        \includegraphics[scale=0.45]{images/priorisointi.pdf}
@@ -749,9 +751,9 @@ Lamourexin \citeyear{lamoureux} mukaan yrityksellä on kolme pääasiallista tap
 
 Yrityksen näkökulmasta teknologialla parannetaan tuotteita, sisäisiä prosesseja ja asiakaskokemusta. Pelkästään teknologian käyttäminen ei kuitenkaan tuo hyötyä liiketoimintaan. Valitulla teknologialla täytyy olla potentiaalia kasvattaa kilpailukykyä määrätyssä aikajaksossa, ja investoinnin tulee ottaa riskit huomioon. Uusia teknologioita tulee ja menee, ja siksi tulisikin olla kykyjä tutkia useampia potentiaalisia teknologioita saman aikaisesti. Ajankohdan tulee myös olla sopiva, koska teknologiat saattavat vanhentua luultua nopeammin ja liian aikaisin tehty investointi uuteen teknologiaan saattaa heikentää kilpailuedun saamista. Teknologian hyödyntämisessä vaaditaan myös selkeä kuva liiketoimintavalmiudesta joka halutaan rakentaa sen avulla. Uusien teknologioiden käytön omaksuminen liiketoiminnan tavoitteiden saavuttamiseksi ei myöskään tapahdu itsestään. Teknologian käyttäminen kilpailuedun saavuttamiseksi markkinoilla onkin organisaation opittu taito. Eli organisaation sisäisten ja ulkoisten tavoitteen kannalta relevanttien sidosryhmien kyky tehdä yhteistyötä. Tämän kyky on vaikeampi rakentaa organisaatioissa, joissa tavoitteen kannalta relevantteja sidosryhmiä on useampia. Suurempi sidosryhmien määrä vaikeuttaa tiedon vaihtamista ja kommunikointia. Uuden teknologian hyödyntäminen kilpailiedun saavuttamiseksi vaatiikin toimintamallin muuttumista, usein yksinkertaisempaan suuntaan.
 
-\subsubsection{Operaattorin digitaalinen transformaatio}
+\subsection{Operaattorin digitaalinen transformaatio}
 
-\subsubsection{Teknologiat digitaalisessa transformaatiossa}
+\subsection{Teknologiat digitaalisessa transformaatiossa}
 
 Digitaalisen teknologian myötä automaatio on scriptausta apeja jne pilvessä jne. Jungner puhui kaikki on avointa
 
@@ -784,16 +786,78 @@ streamlinattu toistamaan asioita jotka auttavat pääsemään tavoitteeseen.
 
 Ydinprosessit Telialla ja ODI prosessi niiden joukossa. Minkälaista tehtävää se suorittaa?
 
+
+
 \clearpage
 
-\section{Tutkimusaineisto ja -menetelmät}
-%\section{Materials and methods}
-\subsection{Tutkimusmotiivi}
-\subsection{Tutkimusmenetelmä}
-\subsection{Case Telia Kontakti L}
-\subsubsection{New Generation Telco}
-\subsubsection{CC-ratkaisut - Zylinc}
-\subsubsection{CC-markkina}
+\section{Tutkimusmenetelmä}
+
+Tässä tutkimuksessa valittiin laadullinen lähestymistapa ymmärtämään/arvioimaan miksi asiakasprosessin automatisoinnissa ei ole toistaiseksi onnistuttu vertaamalla asiakasprosessin rakentamisessa käytettyjen toimintamallien ja järjestelmäkomponenttien sopivuutta suhteessa liiketoiminnan tavoitteisiin, kun tavoitteena on rakentaa automatisoitu asiakasprosessi. Arvioinnissa otetaan huomioon, että kyseessä on operaattorin contact center-liiketoiminta, ja operaattorin uudet investoinnit painottuvat digitaaliseen transformaatioon. 
+
+Tämän lisäksi pyritään ymmärtämään syitä toimintaympäristössä liiketoimintatavoitteiden taustalla. 
+
+Aineistopohjaisen teorian rakentaminen (grounded theory building)\\
+- Menetelmässä kehitetään teoriaa ilmiöstä aineistosta löytyvien havaintojen, niiden koodauksen ja järjestämisen kautta.
+- Teoria perustuu aineistoon, jota voidaan hankkia kenttätyössä haastatteluin ja havainnoin sekä dokumenteista.
+- Toimii tässä tilanteessa koska nykyiset tavoitteet ovat ristiriidassa toteutuneiden asioiden kanssa, ja tilanne vaatii selvittämistä.
+- Nykytilan havaitsemisella voidaan antaa teorian pohjalta tapoja edetä tavoitteeseen
+
+\subsection{Tutkimussuunnitelma}
+
+Single Case study: Tapaustutkimuksessa käsitellään yksittäistä, rajattua kokonaisuutta luonnollisessa ympäristössään, ja kuvaillaan tutkimuskohteen ominaispiirteitä tarkasti ja totuudenmukaisesti. Tutkittavat tapaukset ovat ainutkertaisia, ja niitä tutkitaan omassa erityisessä ympäristössään
+
+Toiminnan nykytilan havaitseminen suhteessa tavoitteisiin:\\
+- Kontakti L asiakasprosessin rakentamisen tila\\
+- Kontakti M asiakasprosessin tavoitteet suhteessa toteutettuun\\
+- VIP-tuotteen asiakasprosessin rakentaminen\\
+- Merex-tuotteen asiakasprosessin rakentaminen\\
++ Prosessikuvaukset\\
+- Miten toteutetut asiakasprosessit kehittyivät tämän jälkeen?\\
+- Pasi Savilaakso, prosessivastaava (asiantuntija)\\
+-> Toiminnan nykytilan havaitseminen suhteessa tavoitteisiin\\
+
+Kontakti L-asiakasprosessiin valittavien komponenttien automatisointimahdollisuudet asiantuntijahaastatteluina\\
+- Zylinc: Cloudy tiimi yritti 6 viikkoa onnistumatta\\
+- Tilaus: Claudia/Salesforce, yritysportaali, Eshop (Transformaatio)\\
+- Laskutus: Komarc Multibella (Transformaatio)\\
+-> Valittavissa olevien komponenttien tuki automatisoinnille, ja sen mahdollistava teknologia (tarvitaanko robitiikkaa?)\\
+
+Itsepalvelu: Asiantuntijahaastatelu\\
+- Tilausvaiheen itsepalvelu\\
+- Ylläpitovaiheen itsepalvelu\\
+
+Robotiikka:\\
+- Kustannus suhteessa hyötyyn: Talon sisäinen työkalu casen arviointiin kvantitatiivisena ennusteena kustannuksista ja hyödyistä. Jyrki Linsen
+
+\subsection{Tiedon kerääminen}
+
+Puolistrukturoidut haastattelut:  Haastattelut olivat
+puolistrukturoituja, jolloin kerättävä tieto oli mahdollisimman analyyttista ja
+kattaa mahdollisimman laajasti aihepiirin, mutta sisältö pysyy silti aihepiirin
+rajoissa.\\
++muu dokumentaatio kuten prosessikuvaukset
+
+
+\subsection{Tiedon analysointi}
+Teemoittelu
+
+\section{Case Telia Kontakti L}
+Haettiin Ruotsin CallGuidea selkeästi halvempaa ja kevyempää IMS-yhteensopivaa ratkaisua, jolla voidaan korvata Merex/Mecm vaihteenhoitopalvelu ja kasvattaa markkinaosuutta ns. keskisegmentissä (joitain kymmeniä agentteja). Projekti taisi alkaa 2015 ja sopimusneuvotteluiden jälkeen tuotteistus/asiakasprosessin rakentaminen alkoi 2017 kesällä. Pilotoitiin kuitenkin jostain syystä yli sadan agentin asiakkaalla, jolla tuhansia kontakteja viikossa. Pilotti alkoi yli vuosi sitten ja teknisistä ongelmista johtuen laskutus ei ole alkanut vieläkään. Selkeästi halvemman hinnan ansiosta voitettu isoja toimijoiden kilpailutuksia. Useita alkuperäiseen haarukkaan kuuluneita asiakkaita jonossa, mutta toimitukset venyvät kaiken ajan kuluessa isojen toimitusten virittämiseen.
+
+ODI-prosessin kuvaus.
+
+\subsection{Liiketoimintaongelman kuvaus}
+\subsection{Liiketoimintaongelman suunniteltu ratkaisu}
+\subsection{Transformaatio}
+
+Simplify operations & transform legacy to create agility & cost leadership\\
+Create seamless experience across technologies services & channels\\
+Secure transition from voice to data through future proof network access to end customers\\
+-> Transformaatio: kilpailukykyiset tarjoamat & toiminnot, yksinkertaiset tuotteet kanavat prosessit ja IT, asiakaslähtöisyys
+
+Ongelmia erityisesti order-to-cash prosesseissa.
+
+\subsection{Kappaleen yhteenveto}
 MUOKKAA: https://jyx.jyu.fi/dspace/bitstream/handle/123456789/47339/URN%3aNBN%3afi%3ajyu-201510203424.pdf?sequence=1 
 
 
@@ -830,7 +894,7 @@ Case study: yksilöllinen tapaus
 
 Tapaustutkimus on paljon käytetty menetelmä liiketaloustieteen piirissä tutkittaessa yrityksiä ja organisaatiokäyttäytymistä.
 
-Tutkittavat tapaukset ovat ainutkertaisia, ja niitä tutkitaan omassa erityisessä ympäristössään.
+.
 
 Tärkeää on tutkimusasetelman kytkeytyminen aikasempaan teoriapohjaan, joka muodostaa perustan jolta analyysit ja tulkinnat tehdään johtopäätelmissä.
 Tutkija ja tutkimuskohde ovat case-tutkimuksessa läheisessä vuorovaikutuksessa keskenään, ja luottamuksen säilyttäminen on osa tutkimusprosessia. Tuloksissa pyritään ymmärtämään ja tulkitsemaan syvällisesti yksittäisiä tapauksia niiden erityisessä kontekstissa, haetaan tietoa dynamiikasta ja prosesseista.
@@ -864,6 +928,8 @@ kerrotaan tutkimuksen toteutustapa ja käytetyt menetelmät.
 %\section{Results}
 
 Myynti toivoo kuumeisesti toimintoja tuotteisiin, että he voivat myydä niitä ja esitellä niitä asiakkaille.
+
+Onko Telian toimintamalli väärä tämänlaisen tuotteen asiakasprosessin rakentamiseen? On totuttu olemaan mukana isoissa hankkeissa joihin on pitänyt päästa mukaan, joten johdon tuki ei ole pienempien ratkaisujen takana. Toimintamalli tukee isojen ratkaisujen rakentamista, ei pienten.
 
 Miten ODI-prosessi rakennetaan Telialla???
 Nykyinen laatujärjestelmä ODI-prosessin tekemiseen ei ole määritelty, vaan tuotepäälliköiden päässä.
