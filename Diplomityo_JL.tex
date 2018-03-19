@@ -824,23 +824,35 @@ rajoissa.\\
 \subsection{Tiedon analysointi}
 Haastatteluiden puhtaaksikirjoitus jokaisen haastattelun jälkeen, haastattelurunko kehittyy haastatteluiden edetessä. 
 
-\section{Digitaalinen transformaatio Telialla}
+
+\section{Ajurit Kontakti L:n asiakasprosessin automatisoinnissa}
+
+Tämän kappaleen tarkoitus on kertoa mitkä ajurit ovat sen taustalla, että Kontakti L:n asiakasprosessi halutaan automatisoida. Taustalla on kaksi asiakokonaisuutta, jotka kuvataan tässä kappaleessa: Ensimmäinen on Telialla käynnissä oleva digitaalinen transformaatio, jonka myötä liiketoimintaprosesseja ja niissä käytettyjä järjestelmiä halutaan yksinkertaistaa ja automatisoida. Toinen on tyhjiö Telian yritysasiakkaille tarjoamien viestintäratkaisujen tuoteportfoliossa, jonka täyttämistä Kontakti L-tuotteella tavoitellaan. Olennaisena osana tämän tyhjiön täyttämistä on automaation hyödyntäminen Kontakti L:n asiakasprosessissa.\\
+
+Tässä kappaleessa lähestytään näitä kahta asiakokonaisuutta Telian liiketoiminnan näkökulmasta. Ensimmäisenä käydään läpi yrityksille suunnattujen viestintäratkaisujen rooli Telian liiketoiminnassa, ja kuvataan seuraavan digitaalisen aikakauden haasteita koko yrityksen ja myös viestintäratkaisujen näkökulmasta. Tämän jälkeen kerrotaan minkälaiset strategiset tavoitteet Telia on asettanut näiden haasteiden voittamiseksi seuraavalla digitaalisella aikakaudella. Tämän avulla päästään ensimmäiseen Kontakti L:n asiakasprosessin automatisointiin vaikuttavaan asiakokonaisuuteen: Telian digitaaliseen transformaatioon, joka toteuttaa strategisia tavoitteita käytännössä.\\
+
+Telian digitaalinen transformaatio kerrotaan kahdesta Kontakti L:n asiakasprosessiin vaikuttavasta näkökulmasta: Ensimmäisenä kuvataan miten Telian toimintamalleja pyritään uudistamaan prosessijohtamisen ja prosessiarkkitehtuuriin perustuen. Tässä kohtaa myös esitetään missä Kontakti L:n asiakasprosessi on prosessiarkkitehtuurissa. Toisena kuvataan Telian IT-järjestelmien tavoitearkkitehtuuri, johon myös Kontakti L:n asiakasprosessin järjestelmävalinnoissa tulisi pyrkiä. Tämän lisäksi kerrotaan painopisteet näissä arkkitehtuureissa, jossa digitaalista transformaatiota on lähdetty toteuttamaan.\\
+
+Tämän kappaleen lopuksi päästään toiseen Kontakti L:n asiakasprosessin automatisointiin vaikuttavaan asiakokonaisuuteen: Tyhjiöön Telian viestintäratkaisujen tuoteportfoliossa, joka on tarkoitus täyttää Kontakti L-tuotteella. Kontakti L:n rooli tuoteportfoliossa kuvataan kahdesta näkökulmasta: Ensin esittämällä tyhjiö asiakassegmentissä, joka Kontakti L:n on tarkoitus täyttää. Toiseksi esittämällä tyhjiö alustaintegroitavuudessa, joka Kontakti L:n on tarkoitus täyttää.
 
 
-Tämän kappale on kuvaus Telialla käynnissä olevasta digitaalisesta transformaatiosta. Tämä on tärkeä kuvata, koska sen avulla määritetään Kontakti L:n asiakasprosessiin vaikuttavat muutosvoimat. Kappale alkaa lyhyellä esittelyllä siitä miten digitaalinen transformaatio ja asiakaspalvelujärjestelmät liittyvät Telian liiketoimintaan. Tämän jälkeen kerrotaan Telian strategisista tavoitteista seuraavalla digitaalisella aikakaudella. Lopuksi kuvataan digitaalisen transformaation muutoshanke, jonka avulla Telia pyrkii strategisiin tavoitteisiinsa. Muutoshanke kuvataan prosessiarkkitehtuurin ja IT-arkkitehtuurin näkökulmasta, jotka antavat viitekehyksen Kontakti L:n asiakasprosessin automatisointiin.
+%\section{Digitaalinen transformaatio Telialla}
 
-\subsection{Asiakaspalvelujärjestelmät Telian liiketoiminnassa}
+
+%Tämän kappale on kuvaus Telialla käynnissä olevasta digitaalisesta transformaatiosta. Tämä on tärkeä kuvata, koska sen avulla määritetään Kontakti L:n asiakasprosessiin vaikuttavat muutosvoimat. Kappale alkaa lyhyellä esittelyllä siitä miten digitaalinen transformaatio ja asiakaspalvelujärjestelmät liittyvät Telian liiketoimintaan. Tämän jälkeen kerrotaan Telian strategisista tavoitteista seuraavalla digitaalisella aikakaudella. Lopuksi kuvataan digitaalisen transformaation muutoshanke, jonka avulla Telia pyrkii strategisiin tavoitteisiinsa. Muutoshanke kuvataan prosessiarkkitehtuurin ja IT-arkkitehtuurin näkökulmasta, jotka antavat viitekehyksen Kontakti L:n asiakasprosessin automatisointiin.
+
+\subsection{Viestintäratkaisujen rooli Telian liiketoiminnassa}
 
 Aikaisemmin Sonerana tunnettu Telia Finland Oyj on ruotsalaisen Telia Company-konsernin Suomen maayhtiö, jonka päätoimiala on telekommunikaation liittyvät palvelut. Yrityksen päätoimialaa on rakentaa ja ylläpitää tietoliikenteen välitystä matkapuhelin- ja lankaverkossa. Telia Finland Oyj on myös toisiksi suurin Suomessa toimiva matkapuhelinoperaattori, jonka pääkilpailijoina toimivat kotimaiset Elisa ja DNA. Kilpailua operaattoreiden välillä on kuvattu kiivaaksi viimeisten vuosien aikana \citep{hesari}. \\
 
-Vaikka Telia onkin toisena liittymien kokonaismäärässä, on sillä ollut perinteisesti Suomessa johtava asema yritysten liittymissä \citep{hesari}. Yritysliittymien ohelle on rakentunut useita lisäpalveluita, joilla asiakas voi täydentää viestintä-, asiakaspalvelu- tai tietoliikenneratkaisuaan. Asiakaspalvelujärjestelmät, kuten Kontakti L, ovat yksi osa näitä viestintäratkaisuja. Yritysasiakkaat hakevatkin usein kokonaisvaltaista viestintäratkaisua, joka koostuu useista erilaisista tietoliikenteeseen, kommunikaatioon ja ohjelmistoihin perustuvasta komponentista. Operaattorin ydinliiketoiminnan ulkopuolisten komponenttien (kuten esimerkiksi OTT-ratkaisujen) määrä näissä viestintäratkaisuissa odotetaan kasvavan (Contact Center-kappale). Vaikka operaattorin tarjoamat komponentit ovatkin välttämättömiä yritysasiakkaiden viestintäratkaisuissa, ei kokonaisratkaisua ole välttämätön hankkia Telian kaltaiselta operaattorilta. Toinen ohjelmistoyhtiö voikin tarjota paremmin asiakkaan tarvetta tai hintaodotusta vastaavan kokonaisratkaisun, jonka osana on operaattorin tarjoamat komponentit. Kuten 4. kappaleessa tuotiin esiin, erilaisten uusien digitaalisten palveluiden kasvussa on riskejä operaattorin kuten Telian liiketoiminnalle.\\
+Vaikka Telia onkin toisena liittymien kokonaismäärässä, on sillä ollut perinteisesti Suomessa johtava asema yritysten liittymissä \citep{hesari}. Yritysliittymien ohelle on rakentunut useita lisäpalveluita, joilla asiakas voi täydentää viestintä-, asiakaspalvelu- tai tietoliikenneratkaisuaan. Asiakaspalvelujärjestelmät, kuten Kontakti L, ovat yksi osa näitä viestintäratkaisuja. Yritysasiakkaat hakevatkin usein kokonaisvaltaista viestintäratkaisua, joka koostuu useista erilaisista tietoliikenteeseen, kommunikaatioon ja ohjelmistoihin perustuvasta komponentista. Operaattorin ydinliiketoiminnan ulkopuolisten komponenttien (kuten esimerkiksi OTT-ratkaisujen) määrä näissä viestintäratkaisuissa odotetaan kasvavan, kuten 3. kappaleessa tuotiin esiin. Vaikka operaattorin tarjoamat komponentit ovatkin välttämättömiä yritysasiakkaiden viestintäratkaisuissa, ei kokonaisratkaisua ole välttämätön hankkia Telian kaltaiselta operaattorilta. Toinen ohjelmistoyhtiö voikin tarjota paremmin asiakkaan tarvetta tai hintaodotusta vastaavan kokonaisratkaisun, jonka osana on operaattorin tarjoamat komponentit. Kuten 4. kappaleessa tuotiin esiin, erilaisten uusien digitaalisten palveluiden kasvussa on riskejä operaattorin kuten Telian liiketoiminnalle.\\
 
 Tulevaisuuden haasteet operaattorin liiketoiminnassa on havaittu Telialla. Ketterästi ja kustannustehokkaasti uusia palveluita tuottavien ohjelmistoyhtiöiden disruptiiviseen uhkaan pyritään vastaamaan.
-Tämän vuoksi Telia onkin investoinut uusiin teknologioihin, uusien palveluiden kehittämiseen ja toiminnan tehostamiseen. Tästä esimerkkinä ovat useat strategiset ohjelmistokehitykseen ja pilvipalveluihin liittyvät yritysostot, Liiga-oikeuksien hankkiminen, uuden Helsinki Data Centerin rakentaminen ja uusien digitaalisten palveluiden kehittäminen. Myös asiakaspalvelujärjestelmien osalta on tunnistettu vastaavia haasteita nykyisessä liiketoiminnassa. Näistä haasteista kerrotaan tarkemmin seuraavassa kappaleessa.\\
+Tämän vuoksi Telia onkin investoinut uusiin teknologioihin, uusien palveluiden kehittämiseen ja toiminnan tehostamiseen. Tästä esimerkkinä ovat useat strategiset ohjelmistokehitykseen ja pilvipalveluihin liittyvät yritysostot, Liiga-oikeuksien hankkiminen, uuden Helsinki Data Centerin rakentaminen ja uusien digitaalisten palveluiden kehittäminen. Myös asiakaspalvelujärjestelmien osalta on tunnistettu vastaavia haasteita nykyisessä liiketoiminnassa. Näistä haasteista kerrotaan tarkemmin tämän kappaleen lopussa.\\
 
-Voidaankin todeta, että Telian strategiana ei ole jäädä kirjallisuuskatsauksessa mainituksi "bittiputkeksi", vaan vahvistaa verkkojaan ja tuoda tämän ympärille uusia palveluita. Telian strategiassa käytetään "New Generation Telco"-termiä kuvaamaan sen tulevaisuuden tavoitetilaa, joka vastaa 4.2-alaluvussa esitettyihin haasteisiin.\\
+Voidaankin todeta, että Telian strategiana ei ole jäädä kirjallisuuskatsauksessa mainituksi "bittiputkeksi", vaan vahvistaa verkkojaan ja tuoda tämän ympärille uusia palveluita. Telian strategiassa käytetään New Generation Telco-termiä kuvaamaan sen tulevaisuuden tavoitetilaa, joka vastaa 4.2-alaluvussa esitettyihin haasteisiin.\\
 
-Seuraavassa pureudutaan hieman Telian liiketoiminnan tavoitteisiin, joihin pyritään Transformaatio-muutoshankkeen avulla.
+Seuraavassa pureudutaan hieman Telian liiketoiminnan tavoitteisiin, joihin pyritään digitaalisen transformaation avulla.
 
 \subsubsection{Telian liiketoiminnan tavoitteet}
 
@@ -855,15 +867,15 @@ Strategiassa tuodaan esiin, että tavoitetila on mahdollinen vahvistamalla liike
 
 Tämän lisäksi strategiassa mainitaan, että Telialla tutkitaan mahdollisuuksia ydinliiketoiminnan lähellä, alueilla jotka vahvistavat sitä. Näistä esimerkkeinä mainitaan investoinnit M2M-teknologiaan, mediaan, turvallisuuteen, rahoituspalveluihin ja TV-palveluihin.\\
 
-Suomen maayhtiössä yllä mainittua strategista muutosta toimeenpannaan Transformaatio -muutoshankkeen avulla, ja se käsittää kaikki liiketoiminta-alueet (poislukien verkonrakentamisen?). Transformaation tarkoituksena on luoda kilpailukykyiset tarjoamat ja toiminnot uudelle digitaaliselle aikakaudelle. Telialla tämä tarkoittaa pyrkimystä yksinkertaisempiin tuotteisiin, asiakaskanaviin, prosesseihin, ja IT-järjestelmiin. Samalla toimintamalleja halutaan muuttaa asiakaslähtöisemmäksi. Tämä pyrkimys yksinkertaiseen, eli viimeinen mainituista tavoitteista, on tämän työn taustalla. Pureudutaan seuraavaksi tarkemmin mikä Telian nykytilassa vaatii muutosta digitaalisessa transformaatiossa.
+ Suomen maayhtiössä yllä mainittua strategista muutosta toimeenpannaan digitaalisen transformaation avulla, jota nimitetään Telialla transformaatiohankkeeksi. Transformaatiohankkeen tarkoituksena on luoda kilpailukykyiset tarjoamat ja toiminnot uudelle digitaaliselle aikakaudelle. Telialla tämä tarkoittaa pyrkimystä yksinkertaisempiin tuotteisiin, asiakaskanaviin, prosesseihin, ja IT-järjestelmiin. Samalla toimintamalleja halutaan muuttaa asiakaslähtöisemmäksi. Tämä pyrkimys kilpailukykyisten toimintojen yksinkertaistamiseen, eli viimeinen mainituista tavoitteista, on tämän työn taustalla. Pureudutaan seuraavaksi tarkemmin mikä Telian nykytilassa vaatii muutosta digitaalisessa transformaatiossa.
 
-\subsubsection{Transformaatiohanke}
+\subsection{Transformaatiohanke}
 
 Transformaatiohankkeen avulla yhdistettiin Telialla käynnissä olleita aikaisempia muutoshankkeita, jolloin näiden hankkeiden kokonaisuuksia yhdistettiin ja näin toimet olisivat seurattavissa saman kokonaisuuden alla. Transformaatiohankkeen tavoite ja sisältö on elänyt hankkeen ajan muutoshankkeille tyypilliseen tapaan. Päätavoitteina on kuitenkin pysynyt Telian brändin vahvistaminen, tuloksiin ja arvoihin perustuva kulttuurimuutos, digitaalisen liiketoiminnan kasvattaminen, ja automatisoidun ja laadukkaan tuotantokoneiston rakentaminen digitaalisen liiketoiminnan tukemiseksi. Uudistamista vaativat osa-alueet jaetaan karkeasti kahteen osa-alueeseen: Prosessimallit ja IT-järjestelmät. Seuraavassa hieman prosessiehin liittyvästä muutospaineesta.\\
 
 \textbf{Toimintamallin muutos}\\
 
-Analyysit Transformaatiohankeen taustalla paljastivat ominaisuuksia Telian toimintamalleissa, jotka aiheuttavat jäykkyyttä ja turhaa komleksisuutta liiketoiminnassa. Havaittiin, että toimintoihin keskittynyt organisaatiomalli heikensi liiketoimintaprosessien toimintaa. Esimerkiksi liiketoimintaprosessit asiakkaiden tarpeista niiden täyttämiseen toimivat heikosti, koska prosessin osakokonaisuudet toimivat siiloissa, ollen vain vastuussa välituotoksistaan. Tällöin prosessiketju katkeili matkalla, ja vastuu koko ketjun tominnasta oli määrittämättä tai henkilöitynyttä. Prosessijohtamisen malleja oli käytössä, mutta vain yksittäisissä osakokonaisuuksissa.\\
+Analyysit transformaatiohankkeen taustalla paljastivat ominaisuuksia Telian toimintamalleissa, jotka aiheuttavat jäykkyyttä ja turhaa komleksisuutta liiketoiminnalle. Havaittiin, että toimintoihin keskittynyt organisaatiomalli heikensi liiketoimintaprosessien toimintaa. Liiketoimintaprosessien osat toimivat siiloissa, ollen vain vastuussa välituotoksistaan. Tällöin prosessiketju katkeili matkalla, ja vastuu koko ketjun tominnasta oli määrittämättä tai henkilöitynyttä. Prosessijohtamisen malleja oli käytössä, mutta vain yksittäisissä osakokonaisuuksissa.\\
 
 \begin{figure}[!h]
     \centering
@@ -872,11 +884,11 @@ Analyysit Transformaatiohankeen taustalla paljastivat ominaisuuksia Telian toimi
     \label{fig:prosark}
 \end{figure}
 
-Siiloutunutta organisaatiomallia alettiin uusimaan prosessijohtamiseen perustuen. Segmentti ja tuotekohtaisia toimintamalleja alettiin muuttamaan perustumaan arvoketjujen ja elinkaarien johtamiseen koko liiketoiminnan kattavalla prosessimallilla. Tämän työn tuloksena määriteltiin uusi prosessiarkkitehtuuri, joka on kuvattuna kuvassa \ref{fig:prosark}. Jatkossa uusi prosessiarkkitehtuuri ja vanha toiminnallinen organisaatiomalli toimivat päällekäin, mutta toimintaa seurataan tarkemmin prosessien avulla. Tämä prosessiarkkitehtuuri toimi myös viitekehyksenä siihen mistä lähtökohdista Kontakti L-asiakaspalvelujärjestelmän nykyinen asiakasprosessi on rakennettu. Kuten 2. kappaleessa kerrottiin, prosessiarkkitehtuuri kuvaa tietyn osaprosessin tehtävän, sijainnin ja tavoitteen yrityksen kokonaisarkkitehtuurissa. Se ei kuitenkaan anna vastausta siihen miten tämä käytännössä tehdään yrityksen IT-arkkitehtuurissa. Transformaatiohankeen vaikein osuus onkin juuri IT-järjestelmiin liittyvä osuus.\\
+Siiloutunutta organisaatiomallia alettiin uusimaan prosessijohtamiseen perustuen. Segmentti ja tuotekohtaisia toimintamalleja alettiin muuttamaan perustumaan arvoketjujen ja elinkaarien johtamiseen koko liiketoiminnan kattavalla prosessimallilla. Tämän työn tuloksena määriteltiin uusi prosessiarkkitehtuuri, joka on kuvattuna kuvassa \ref{fig:prosark}. Jatkossa uusi prosessiarkkitehtuuri ja vanha toiminnallinen organisaatiomalli toimivat päällekäin, mutta toimintaa seurataan tarkemmin prosessien avulla. Kuten 2. kappaleessa kerrottiin, prosessiarkkitehtuuri kuvaa tietyn osaprosessin tehtävän, sijainnin ja tavoitteen yrityksen kokonaisarkkitehtuurissa. Se ei kuitenkaan anna vastausta siihen miten tämä käytännössä tehdään yrityksen IT-arkkitehtuurissa. Transformaatiohankeen vaikein osuus onkin juuri IT-järjestelmiin liittyvä osuus.\\
 
 \textbf{IT-järjestelmäarkkitehtuurin muutos}\\
 
-Analyysien mukaan kompleksisuutta tuovia ominaisuuksia on myös muissakin rakenteissa kuin organisaatiomallissa. Osin vanhasta organisaatiomallista ja vuosikymmeniä rakentuneesta IT-infrasta johtuen, IT-järjestelmien lukumäärä havaittiin korkeaksi, osin vanhanaikaiseksi, päällekäiseksi ja järjestelmät toimivat liiaksi toisista irrallaan. Toimintamallit ja käytetyt järjestelmät olivat erilaisia organisaation eri osissa. Esimerkiksi yritysasiakkaille tarjotuissa ratkaisuissa yksittäisten räätälöintien, hinnoittelumallien ja taustajärjestelmien määrän havaittiin tuovan turhaa kompleksisuutta, jota oli vaikea hallita. Laskutukseen ja asiakkuudenhallintaan käytettyjä järjestelmiä on myös useita, ja ne toimivat erillään. Jossain tapauksissa laskutus hoitui manuaalisesti Excel-työkalujen avulla. Tämän johdosta oli vaikea muodostaa kokonaisvaltaista näkymää asiakkaan ratkaisusta, ja useista erilaisista asiakkalilla olevista laskutusmalleista. Myös kokonaisvaltainen näkymä asiakkailla käytössä olevista ja myytävissä olevista ratkaisuista oli vaikea muodostaa.  Kokonaisuus järjestelmien osalta havaittiin kompleksiseksi ja vaikeasti hallittavaksi.\\
+Analyysien mukaan kompleksisuutta tuovia ominaisuuksia on myös muissakin rakenteissa kuin organisaatiomallissa. Osin vanhasta organisaatiomallista ja vuosikymmeniä rakentuneesta IT-infrasta johtuen, IT-järjestelmien lukumäärä havaittiin korkeaksi, osin vanhanaikaiseksi, päällekäiseksi ja järjestelmät toimivat liiaksi toisista irrallaan. Toimintamallit ja käytetyt järjestelmät olivat erilaisia organisaation eri osissa. Esimerkiksi yritysasiakkaille tarjotuissa ratkaisuissa yksittäisten räätälöintien, hinnoittelumallien ja taustajärjestelmien määrän havaittiin tuovan turhaa kompleksisuutta, jota oli vaikea hallita. Laskutukseen ja asiakkuudenhallintaan käytettyjä järjestelmiä on myös useita, ja ne toimivat erillään. Jossain tapauksissa laskutus hoitui manuaalisesti Excel-työkalujen avulla. Tämän johdosta oli vaikea muodostaa kokonaisvaltaista näkymää asiakkaan ratkaisusta, ja useista erilaisista asiakkailla olevista laskutusmalleista. Myös kokonaisvaltainen näkymä asiakkailla käytössä olevista ja myytävissä olevista ratkaisuista oli vaikea muodostaa. Kokonaisuus järjestelmien osalta havaittiin kompleksiseksi ja vaikeasti hallittavaksi.\\
 
 \begin{figure}[!h]
     \centering
@@ -889,31 +901,35 @@ Transformaatiohanke lähti uudistamaan IT-järjestelmiä yllä mainittujen strat
 
 Käyttöliittymäkerros kuvaa kokoelmaa erilaisista kanavista, joista Telian asiakkaat käyttävät palveluitaan. Tämän kerroksen tarkoitus on antaa asiakkaille uusia parempia digitaalisia kanavia, joista Telian palveluita voi tilata ja hallinnoida. Aikaisemmin kuluttaja- ja yritysasiakkaille on ollut useita erilaisia järjestelmäratkaisuja ja toimintamalleja, joiden kautta palveluita hallitaan. Usein myös yksinkertaisissakin asioissa on ollut tarve kontaktoida Telian henkilöä palveluihin liittyvissä asioissa. Tämän kerroksen ratkaisujen avulla järjestelmien määrää halutaan pienentää ja suuri osa transaktioista halutaan siirtää uusiin digitaalisiin kanaviin. Tämän toivotaan parantavan asiakaskokemusta merkittävästi ja säästävän kustannuksia asiakaspalvelussa. Tämä kerros on vahvasti liitoksissa seuraavaan kerrokseen.\\
 
-Frontend-kerros kuvaa näkymää asiakkaan palveluihin Telian henkilöille, eli CRM-näkymää. Kuluttaja- ja yritysliiketoiminnassa ei aikaisemmin ole ollut tälläistä yhtenäistä näkymää, ja siksi sen rakentaminen koetaan tärkeäksi. Tälle kerrokselle on valittu yksi järjestelmä, joka käsittää tulevaisuudessa kaikki Telian kuluttaja- ja yritysasiakkaat. \\
+Frontend-kerros kuvaa näkymää asiakkaan palveluihin Telian henkilöille. Kuluttaja- ja yritysliiketoiminnassa ei aikaisemmin ole ollut tälläistä yhtenäistä näkymää, ja siksi sen rakentaminen koetaan tärkeäksi. Tälle kerrokselle on valittu yksi järjestelmä, joka käsittää tulevaisuudessa kaikki Telian kuluttaja- ja yritysasiakkaat. Tässä kerroksessa on myös helposti käytettävät näkymät erilaisiin asiakaspalvelutehtäviin ja myynnin työkalut. Tähän kerrokseen halutaan myös mallintaa kaikkia Telian tuotteet ja palvelut, koska tällä hetkellä tämä tieto on hajallaan erilaisissa järjestelmissä, erilaisina versioina tai se puuttuu kokonaan. Tämän kerroksen ratkaisujen avulla erilaisia tuotteita ja palveluita voidaan tuoda markkinoille nopeammin ja asiakkuuksia voidaan hallita tuloksekkaammin. Nämä kaksi ylempää kerrosta eivät kuitenkaan voi toimia ilman integraatiota taustajärjestelmiin.\\
 
-Tässä kerroksessa on myös helposti käytettävät näkymät erilaisiin asiakaspalvelutehtäviin ja myynnin työkalut. Tähän kerrokseen halutaan myös mallintaa kaikkia Telian tuotteet ja palvelut, koska tällä hetkellä tämä tieto on hajallaan erilaisissa järjestelmissä, erilaisina versioina tai se puuttuu kokonaan. Tämän kerroksen ratkaisujen avulla erilaisia tuotteita ja palveluita voidaan tuoda markkinoille nopeammin ja asiakkuuksia voidaan hallita tuloksekkaammin. Nämä kaksi ylempää kerrosta eivät kuitenkaan voi toimia ilman integraatiota taustajärjestelmiin.\\
+Integraatio-kerros kuvaa sitä miten kaksi ylempää kerrosta yhdistyvät alemman backend-kerroksen tuotantojärjestelmiin. Aikaisemmin integraatioita lukuisten järjestelmien välillä rakennettiin yksittäisesti, jolloin erilaisten integraatioiden hallitseminen oli työlästä ja niiden uudelleenkäyttö ei ollut mahdollista. Jatkossa integraatio-kerros on kokoelma määriteltyjä rajapintoja, jossa on avoimia rajapintoja ja standarditeknologioita. Kerroksen avulla kumppanit ja asiakkaat voivat myös integroitua lähemmäs Telian ekosysteemiä. \\
 
-Integraatio-kerros kuvaa sitä miten kaksi ylempää kerrosta yhdistyvät alemman backend-kerroksen tuotantojärjestelmiin. Aikaisemmin integraatioita lukuisten järjestelmien välillä rakennettiin yksittäisesti (P2P), jolloin erilaisten integraatioiden hallitseminen oli työlästä ja niiden uudelleenkäyttö ei ollut mahdollista. Jatkossa integraatio-kerros on kokoelma määriteltyjä rajapintoja, jossa on avoimia rajapintoja ja standarditeknologioita. Kerroksen avulla kumppanit ja asiakkaat voivat myös integroitua lähemmäs Telian ekosysteemiä. \\
+Backend-kerros kuvaa tuotantojärjestelmiä, joissa asiakkaiden tuotteet ja palvelut toimivat, ja myös esimerkiksi laskutusjärjestelmiä. Tässä kerroksessa on vuosien mittaan rakentunut vanhojen järjestelmien kokoelma, ja myös uudet rakenteilla olevat järjestelmät. Tässä kerroksessa on myös laaja kokoelma erilaisia uusia ja vanhoja teknologioita, jonka vuoksi niiden kehittäminen on hidasta ja kallista. Tähän kerroksessa kompleksisuutta tuo myös aikaisemmin tuotelinjoitttain rakennetut tuotantojärjestelmät. Jatkossa tässä kerroksessa tavoitteena on karsia päällekkäisiä järjestelmiä ja hankkiutua eroon mahdollisimman suuresta määrästä järjestelmiä. Tämän avulla halutaan laskea kustannuksia laadukkailla ja virheettömästi toimivilla taustajärjestelmillä. Esimerkiksi tavoitteena on käyttää yhtä laskutusjärjestelmää tulevaisuudessa.\\
 
-Backend-kerros kuvaa tuotantojärjestelmiä, joissa asiakkaiden tuotteet ja palvelut toimivat, ja myös laskutusjärjestelmiä. Tässä kerroksessa on vuosien mittaan rakentunut vanhojen järjestelmien kokoelma, ja myös uudet rakenteilla olevat järjestelmät. Tässä kerroksessa olevien vanhojen järjestelmien kehittäminen on kallista ja hidasta. Tähän kerroksessa kompleksisuutta tuo myös aikaisemmin tuotelinjoitttain rakennetut tuotantojärjestelmät. Tavoitteena on karsia päällekkäisiä järjestelmiä ja hankkiutua eroon mahdollisimman suuresta määrästä järjestelmiä. Tavoitteena on karsia kustannuksia ja tehdä laadukkaat virheettömästi toimivat taustajärjestelmät ja hoitaa automaatio yläkerrosten järjestelmistä. \\
-
-Transformaatiohankkeen läpivieminen nykytilasta tavoitetilaan uuden prosessiarkkitehtuurin ja IT-arkkitehtuurin avulla on iso muutos. Siksi sen läpivientiä ohjaa liiketoiminnan tavoitteet, joista seuraavassa lisää.\\
+Transformaatiohankkeen läpivieminen nykytilasta tavoitetilaan uuden prosessiarkkitehtuurin ja IT-arkkitehtuurin avulla on iso muutos. Siksi sen läpivientiä ohjaa liiketoiminnan tavoitteet, joiden perusteella on valittu painopisteet.\\
 
 \textbf{Transformaatiohankkeen painopisteet}\\
 
-Transformaatiohankkeen käytännön toteutuksen alkaessa arvioitiin mikä on vaikein ja ensimmäinen liiketoiminnan tarve johon muutos tulisi kohdentaa. Todettiin, että painopiste on aluksi kahdessa asiassa: Uusissa tuotteissa ja palveluissa, sekä yritysliiketoiminnan asiakaskokemuksen kehittämisessä.\\
+Transformaatiohankkeen ensimmäiksi painopisteiksi valittiin alueet, joissa oli suurin liiketoiminnallinen tarve saada tuloksia aikaan. Todettiin, että painopiste on aluksi kahdessa asiassa: Uudet tuotteet ja palvelut rakennetaan tukemaan prosessiarkkitehtuuria ja IT-arkkitehtuuria. Prosessiarkkitehtuurin ja IT-arkkitehtuurin osalta painopiste on alueissa, joissa voidaan kehittää yritysliiketoiminnan asiakaskokemusta.\\
 
-Uusien tuotteiden ja palveluiden osalta tämä tarkoitti sitä, että niiden tulee käyttää tavoitteen mukaista IT-arkkitehtuuria. Eli näiden tuotteiden tai palveluiden tuottamiseen tulee käyttää IT-järjestelmiä, jotka toimivat myös tulevaisuuden IT-arkkitehtuurissa. Lisäksi tuotantoprosessien tulee olla suurilta osin automatisoituja.\\
+Uusien tuotteiden ja palveluiden osalta tämä tarkoitti sitä, että niiden tulee käyttää tavoitteen mukaista IT-arkkitehtuuria. Eli näiden tuotteiden tai palveluiden tuottamiseen tulee käyttää IT-järjestelmiä, jotka toimivat myös tulevaisuuden IT-arkkitehtuurissa. Lisäksi tuotantoprosessien tulisi olla automatisoitu mahdollisuuksien rajoissa. Tämän vuoksi Kontakti L:n asiakasprosessille on myös asetettu tavoite automatisoinnista.\\
 
-Yritysliiketoiminnan asiakaskokemuksen kehittämisessä todettiin, että tähän voitaisiin vaikuttaa eniten keskittymällä prosessiarkkitehtuurin asiakasprosesseista tarpesta tilaukseen-prosessiin. Tämän prosessin parantamisen toimenpiteet tehdään tällöin IT-arkkitehtuurin kahdessa ylimmässä kerroksessa, eli käyttöliittymä- ja front end-kerroksissa.
+Yritysliiketoiminnan asiakaskokemuksen kehittämisessä todettiin, että tähän voitaisiin vaikuttaa eniten keskittymällä prosessiarkkitehtuurin (kuva \ref{fig:prosark}) asiakasprosesseista tarpesta tilaukseen-prosessiin. Tässä prosessissa on niiden toimintojen ketju, joiden perusteella asiakas saadaan tilaamaan tuote tai palvelu. Havaittiin, että tähän prosessiin voidaan vaikuttaa eniten kuvassa \ref{fig:ratkark} esitetyn IT-arkkitehtuurin kahdessa ylimmässä kerroksessa, jossa asiakaspolkua tukevia työkaluja voidaan rakentaa asiakkaan ja liiketoiminnan käytettäväksi.\\
 
-Tavoitetilan mukaisen prosessiarkkitehtuurin osalta todettiin, että tämä tarkoitti tarpeesta tilaukseen- asiakasprosessiin kehittämistä uusilla digitaalisilla teknologioilla. Tavoitetilan IT-arkkitehtuurin osalta tämä tarkoitti keskittymistä kahteen ylempään kerrokseen, eli käyttöliittymä- ja frontend-kerrokseen. Tarkoituksena oli siis tarjota puuttuva asiakashallinnan näkymä liiketoiminnalle, ja rakentaa asiakkaille paremmat työkalut käyttöliittymiin.\\
+Käytännön työtä on tehty pilotointien avulla rajatuissa kompakteissa toiminnoissa. Havaittiin, että toimintamallit uusissa digitaalisissa kanavissa eroavat suuresti vanhasta. Myynti, markkinointi ja asiakaspalvelu ovat erilaisia jatkossa, jonka vuoksi vasta uusien toimintamallien rakentamisen jälkeen voidaan nähdä mitä kannattaa rakentaa tai automatisoida teknologian avulla.\\
 
-Tämän jälkeen kokonaisuutta rajattiin koskemaan segmenttiä, jossa oli eniten liiketoiminnallista tarvetta parantaa asiakaskokemusta, ja missä saataisiin lyhyellä aikavälillä eniten liiketoiminnan tulosta aikaan (kuva \ref{fig:digivisio}). Eli kompakti ryhmä, jossa oli toistettavat toimintamallit ja voluumia asiakashallinnoinnissa.\\
+Seuraavassa alaluvussa kerrotaan Telian viestintäratkaisujen tuoteportfoliosta, joka on Telian transformaatiohankkeen lisäksi toinen Kontakti L:n automatisointia ajava asiakokonaisuus.
 
-Ensimmäisissä piloteissa huomattiin, että uudet digitaaliset kanavat ja työkalut vaativat myös operatiivista muutosta. Olikin järkevä 
+%Operatiivisen mallin muutos. myynti ja markkinointi asiakaspalvelu jne erilaista uusissa digitaalisissa kanavissa. iso liikeotiminnan muutos. vasta sen jälkeen tiedetään tarkemmin miten asiat kannattaa konfiguroida ja automatisoida. Sen takia liiketoiminta johtaa tätä ja sen jälkeen teknologia ja kanavat toteuttaa sen. Käyttäjälähtöistä kehitystä. 
 
-Vanhojen toimintamallit ryhmätasolla esimerkiksi myynnissä ja markkinoinnissa eivät soveltuneet käytettäviksi uusien työkalu
+%Tavoitetilan mukaisen prosessiarkkitehtuurin osalta todettiin, että tämä tarkoitti tarpeesta tilaukseen- asiakasprosessiin kehittämistä uusilla digitaalisilla teknologioilla. Tavoitetilan IT-arkkitehtuurin osalta tämä tarkoitti keskittymistä kahteen ylempään kerrokseen, eli käyttöliittymä- ja frontend-kerrokseen. Tarkoituksena oli siis tarjota puuttuva asiakashallinnan näkymä liiketoiminnalle, ja rakentaa asiakkaille paremmat työkalut käyttöliittymiin.\\
+
+%Tämän jälkeen kokonaisuutta rajattiin koskemaan segmenttiä, jossa oli eniten liiketoiminnallista tarvetta parantaa asiakaskokemusta, ja missä saataisiin lyhyellä aikavälillä eniten liiketoiminnan tulosta aikaan (kuva \ref{fig:digivisio}). Eli kompakti ryhmä, jossa oli toistettavat toimintamallit ja voluumia asiakashallinnoinnissa.\\
+
+%Ensimmäisissä piloteissa huomattiin, että uudet digitaaliset kanavat ja työkalut vaativat myös operatiivista muutosta. Olikin järkevä 
+
+%Vanhojen toimintamallit ryhmätasolla esimerkiksi myynnissä ja markkinoinnissa eivät soveltuneet käytettäviksi uusien työkalu
 
 %Transformaatiohankkeen painopisteet ovat olleet siellä missä lyhyellä aikavälillä voidaan saada eniten liiketoiminnallisia tuloksia aikaan, kuten 4. kappaleessa tuotiin esiin. Panopisteiksi valittiin tällä perusteella yritysliiketoiminnan keskisuuren asiakassegmentin asiakaspolun parantaminen ja uudet yrityksille lanseerattavat palvelut ja tuotteet.\\ 
 
@@ -938,18 +954,19 @@ Vanhojen toimintamallit ryhmätasolla esimerkiksi myynnissä ja markkinoinnissa 
 
 %Operatiivisen mallin muutos. myynti ja markkinointi asiakaspalvelu jne erilaista uusissa digitaalisissa kanavissa. iso liikeotiminnan muutos. vasta sen jälkeen tiedetään tarkemmin miten asiat kannattaa konfiguroida ja automatisoida. Sen takia liiketoiminta johtaa tätä ja sen jälkeen teknologia ja kanavat toteuttaa sen. Käyttäjälähtöistä kehitystä. 
 
-\section{Case Kontakti L-tuotteen asiakasprosessi}
+%\section{Case Kontakti L-tuotteen asiakasprosessi}
 
-Tässä kappaleessa käydään läpi Kontakti L:n asiakasprosessin nykytila. Nykytilan taustaksi kerrotaan Kontakti L:n liiketoimintatapaus, josta selviää asiakasprosessille asetetut vaatimukset. Tämän jälkeen käydään läpi itse asiakasprosessin nykytila kuvaamalla prosessin työvaiheet, näiden työvaiheiden kulku, prosessissa toimivat sidosryhmät ja käytetyt järjestelmät. Lopuksi kerrotaan haastatteluissa esiin nousseita haasteita asiakasprosessin nykytilassa.
+%Tässä kappaleessa käydään läpi Kontakti L:n asiakasprosessin nykytila. Nykytilan taustaksi kerrotaan Kontakti L:n liiketoimintatapaus, josta selviää asiakasprosessille asetetut vaatimukset. Tämän jälkeen käydään läpi itse asiakasprosessin nykytila kuvaamalla prosessin työvaiheet, näiden työvaiheiden kulku, prosessissa toimivat sidosryhmät ja käytetyt järjestelmät. Lopuksi kerrotaan haastatteluissa esiin nousseita haasteita asiakasprosessin nykytilassa.
 
-\subsubsection{Kontakti L-tuotteen liiketoimintatapaus}
+\subsection{Kontakti L viestintäratkaisujen tuoteportfoliossa}
 
-Kontakti L-tuote on osa Telian yrityksille suunnattujen viestintäratkaisujen tuoteportfoliota. Käydään seuraavassa läpi Kontakti L:n rooli tuoteportfoliossa kahdesta näkökulmasta, eli asiakassegmentin ja integroitavuuden osalta.\\
+Kontakti L-tuote on uusi tuote Telian yrityksille suunnattujen viestintäratkaisujen tuoteportfoliota, jossa Kontakti L:n rooli on olla nopeasti toimitettava ja tarjota perusratkaisun lisäksi laajat integrointimahdollisuudet muihin alustoihin. Käydään seuraavassa läpi Kontakti L:n rooli tuoteportfoliossa kahdesta näkökulmasta, eli asiakassegmentin ja integroitavuuden osalta.\\
 
 \textbf{Kontakti L:n asiakassegmentti}\\
 
 Telian viestintäratkaisujen tuoteportfolio on jaettu asiakaspalvelujärjestelmien osalta kolmeen asiakassegmenttiin: Pieneen, keskikokoiseen ja isoon segmenttiin. Asiakassegmentit kuvastavat asiakaspalveluratkaisun toiminnallisuuden ja kompleksisuuden määrää, ei itse ratkaisua käyttävän asiakasyrityksen kokoa tai ratkaisun käyttäjämäärää. Kompleksisuudella viitataan erilaisten asiakaskohtaisten toiminnallisuuksien ja hinnoittelumallien rakentamiseen. Tuoteportfolio ja asiakassegmentit on esitetty kuvassa \ref{fig:segmentit}. Kontakti L-tuote sijoitetaan tuoteportfoliossa keskikokoiseen segmenttiin.\\
 
+Kontakti L eroaa muista tuoteportfolion asiakaspalvelujärjestelmistä, koska se perustuu täysin Telian ulkopuolisen alihankkijan järjestelmään. Muut asiakaspalvelujärjestelmät ovat Telia-konsernin yhtiöissä kehitettyjä järjestelmiä.\\ 
 \begin{figure}[!h]
     \centering
     \includegraphics[scale=0.5]{images/segmentit.pdf}
@@ -959,11 +976,11 @@ Telian viestintäratkaisujen tuoteportfolio on jaettu asiakaspalvelujärjestelmi
 
 Kuvan \ref{fig:segmentit} y-akseli esittää Telian asiakkaan asiakaspalvelussa työskentelevien henkilöiden lukumäärää. X-akseli taas esittää ratkaisun hintaa ja kompleksisuutta. Y- ja x-akseleiden välissä oleva nuoli kuvaa toiminnallisuuksien määrän kasvua ja myös eri räätälöintivaihtoehtojen lukumäärän kasvua. Kuvan laatikoilla esitetään miten tarpeeseen kukin ratkaisu soveltuu.\\
 
-Asiakaspalvelujärjestelmien osalta Telia on ollut perinteinen toimija isossa segmentissä, jossa korostuu asiakaskohtaiset räätälöidyt toiminnallisuudet ja hinnoittelumallit. Viime vuosina markkinassa on kuitenkin ollut tarvetta kevyemmälle ratkaisulle, jonka vuoksi tuoteportfoliota on täydennetty Kontakti M- ja Kontakti L-tuotteilla.\\
+Asiakaspalvelujärjestelmien osalta Telia on ollut perinteinen toimija isossa segmentissä Kontakti XL-tuotteella, joka on ollut käytössä usean vuoden ajan. Sen tuottamisessa korostuu asiakaskohtaiset räätälöidyt toiminnallisuudet ja hinnoittelumallit. Myös toimitusajat ovat tällöin usein pitkiä ja ratkaisu toimitetaan asiakasprojektina. Tässä segmentissä Telia on ollut vahvin, kun taas keskikokoisessa ja pienessä segmentissä markkinaosuus on ollut heikko. Viime vuosina markkinassa onkin nähty kasvupotentiaalia nimenomaan keskikokoisessa ja pienessä segmentissä, jonka vuoksi tuoteportfoliota on täydennetty Kontakti M- ja Kontakti L-tuotteilla.\\
 
-Pieneen asiakassegmenttiin kohdennettu Kontakti M-tuote on toiminnallisuuksilla ja räätälöintivaihtoehdoilla mitattuna yksinkertaisin ratkaisu asiakaspalveluun. Sen vahvuus on lähes automatisoitu toimitus ja asiakas voi tilata ja konfiguroida sen itse. Heikkoutena ratkaisussa on kuitenkin integroitavuus muihin asiakkaan järjestelmiin, jonka vuoksi Kontakti XL-tuotteen ja Kontakti M-tuotteen välille jäi tyhjiö erityisesti integroitavuudessa Telian muihin viestintäratkaisuihin.\\
+Pieneen asiakassegmenttiin kohdennettu Kontakti M-tuote on toiminnallisuuksilla ja räätälöintivaihtoehdoilla mitattuna yksinkertaisin ratkaisu asiakaspalveluun. Sen vahvuus on lähes automatisoitu toimitus ja asiakas voi tilata ja konfiguroida sen itse. Heikkoutena ratkaisussa on rajatut toiminnallisuudet ja integroitavuus muihin asiakkaan järjestelmiin. Tämän vuoksi Kontakti XL-tuotteen ja Kontakti M-tuotteen välille jäi tyhjiö.\\
 
-Kontakti L-tuotteen tavoite onkin yhdistää Kontakti M- ja Kontakti XL-tuotteen parhaat puolet, eli sen tulisi olla nopeasti toimitettavissa ja tarjota perusratkaisun ohella hyvät mahdollisuudet eri alustoihin integroitumisessa, josta seuraavassa lisää.\\
+Kontakti L-tuotteen tavoite onkin yhdistää Kontakti M- ja Kontakti XL-tuotteen parhaat puolet, eli sen tulisi olla nopeasti toimitettavissa, laskutettavissa ja tarjota perusratkaisun ohella hyvät mahdollisuudet eri alustoihin integroitumisessa, josta seuraavassa lisää.\\
 
 \textbf{Kontakti L:n integroitavuus}\\
 
@@ -976,35 +993,47 @@ Kuten 3-kappaleessa tuotiin esiin, asiakaspalvelujärjestelmä integroituu yrity
     \label{fig:palvelumal}
 \end{figure}
 
-\begin{table}[]
-\centering
-\caption{My caption}
-\label{my-label}
-\begin{tabular}{|l|l|l|}
-\hline
+%\begin{table}[]
+%\centering
+%\caption{My caption}
+%\label{my-label}
+%\begin{tabular}{|l|l|l|}
+%\hline
 
-\textbf{Alusta:}    & \textbf{Asiakaspalvelujärjestelmä:} & \textbf{Vaihteenhoitojärjestelmä:}      \\ \hline
-Cisco     & Kontakti XL               & Vanha: Mecm/ Uusi: Kontakti L \\ \hline
-Microsoft & Uusi: Kontakti L          & Uusi: Kontakti L              \\ \hline
-Mitel     & Kontakti XL/ VIP          & VIP                           \\ \hline
-\end{tabular}
-\end{table}
+%\textbf{Alusta:}    & \textbf{Asiakaspalvelujärjestelmä:} & \textbf{Vaihteenhoitojärjestelmä:}      \\ %\hline
+%Cisco     & Kontakti XL               & Vanha: Mecm/ Uusi: Kontakti L \\ \hline
+%Microsoft & Uusi: Kontakti L          & Uusi: Kontakti L              \\ \hline
+%Mitel     & Kontakti XL/ VIP          & VIP                           \\ \hline
+%\end{tabular}
+%\end{table}
 
 Kuvassa on esitettynä kolme eri alustaa ja kaksi erilaista ratkaisua asiakaspalvelujärjestelmän osalta. Asiakaspalvelujärjestelmä voi toimia joko perinteisenä asiakaspalvelussa käytettynä järjestelmänä tai vaihteenhoidon järjestelmänä. Kontakti L-tuotteen vahvuus onkin, että se voi toimia kumpanakin.\\
 
 Kontakti L-tuotteella haettiin ratkaisua joka on integroitavissa Microsoftin alustan eri palveluihin. Aikaisemmin tuoteportfoliossa ei ollut ratkaisua jossa tämä onnistuisi täysin. Kontakti L-tuote myös korvaa tuoteportfoliossa elinkaarensa päässä olevan Mecm-tuotteen Ciscon ympäristössä.\\
 
-\textbf{Liiketoimintatapauksen yhteenveto}\\
+\subsection{Kappaleen yhteenveto}
 
-Kontakti L-tuote siis täydentää Telian viestintäratkaisujen tuoteportfoliota kahdella tavalla. Se tarjoaa ratkaisun asiakaspalvelujärjestelmien tuoteportfoliossa olleeseen aukkoon keskikokoisessa asiakassegmentissä, ja se tukee integraatiotioita Microsoftin alustan eri tuotteisiin.\\
+Tässä kappaleessa käytiin läpi miksi Kontakti L:n asiakasprosessi halutaan automatisoida. Automaatiota ajaa Telialla käynnissä oleva digitaalinen transformaatio ja viestintäratkaisujen tuoteportfolion tarve nopeasti toimitettavalle ratkaisulle, jossa on perusratkaisun lisäksi mahdollisuuksia integroitua muihin asiakkaan järjestelmiin.\\
 
-Telian kannalta markkinassa on eniten kasvupotentiaalia pienessä ja keskisuuressa asiakassegmentissä, jossa Telian markkinaosuus on pienin. Kappaleessa 4. mainittiin, että yrityksellä on kolme pääasiallista tapaa kehittää liiketoimintavalmiuksia markkinoilla: Kehitä tuotetta tai palvelua tekemällä siitä arvokkaampia asiakkaalle. Tehosta sisäisiä prosesseja tuottaaksesi arvo pienemmilläkustannuksilla. Paranna asiakaspolkua helpottamalla asiakkaan arvon hankkimista. Kuvan \ref{fig:digivisio} mukaan tavoite Kontakti L-tuotteen osalta onkin saada liiketoiminnan tuloksia aikaan tehostamalla prosesseja.
+Telian digitaalinen transformaatio ajaa automaatiota Kontakti L:n asiakasprosessiin, koska yksi sen painopiste on uusien tuotteiden ja palveluiden rakentaminen tavoitteen mukaiseen prosessi- ja IT-arkkitehtuuriin. Näin Kontakti L on osa kokonaisuutta joka on täyttämässä Telian strategiaa kilpailukykyisemmistä toiminnoista, joilta halutaan ketteryyttä ja kustannustehokkuutta uudella digitaalisella aikakaudella.\\
 
-Erityisesti Kontakti L-tuotteen osalta markkinaosuuden kasvattaminen keskisuuressa asiakassegmentissä on kiinni siitä onnistutaanko sen tuottamisessa yhdistämään Kontakti M- ja Kontakti XL-tuotteiden hyvät puolet. \\
+Telian viestintäratkaisujen tuoteportfoliossa asiakaspalvelujärjestelmien osalta Kontakti L:n asiakasprosessin automatisointia ajaa sen rooli keskisegmentissä, jossa yhdistyy ison ja pienen segmentin parhaat puolet. Keskisegmentin ratkaisun on oltava nopeasti toimitettavissa, mutta silti tarjota mahdollisuudet perusratkaisun lisäksi erilaisiin asiakaskohtaisiin integrointeihin. Nopeus ja asiakaskohtaiset integroinnit ovat kuitenkin ristiriidassa, ja tässä ristiriidan selvittämisessä automaatiolla on tärkeä rooli. Myös tavoitteena siirtää asiakasprosessissa tehtävää konfiguroitia asiakkaan tekemäksi itsepalveluksi.
 
-Asiakasprosessilta vaaditaankin nopeutta ja kustannustehokkuutta. Haaste Telian kannalta tässä onkin oikean toimintamallin löytäminen asiakasprosessissa. Kontakti L on myös uusi tuote, jonka myötä sille asetettiin uuden strategian mukaisesti tavoite korkeasta automaatioasteesta. Johdon asiakasprosessille asettama tavoite on 80-prosentin automaatio. Asiakasprosessissa tulisikin ottaa siksi huomioon sen yhteensopivuus tavoiteltuun IT-arkkitehtuuriin.
- Vendor ja IMS
+Kontakti L:n asiakasprosessin tavoitteet vaativatkin uutta toimintamallia ja uusien teknologioiden hyödyntämistä. On tunnistettava perusratkaisu, joka voidaan automatisoida ja siirtää laskutukseen nopeasti tilauksesta, sekä tehdä vaatimuksien mukaiset integraatiot mahdolliseksi. On myös löydettävä ne toiminnot, jotka on järkevä siirtää itsepalveluun. Itsepalveluun tarvitaan myös käyttöliittymä, jonka kautta tehtävät toiminnot ovat helppoja asiakkaalle.\\
 
+On myös ilmeistä, että näiden kahden asiakasprosessin automatisointia ajavien asiakokonaisuuksien taustalla on sama ilmiö. Uusia digitaalisia teknologioita ja ketteriä toimintamalleja hyödyntävät yritykset pystyvät luomaan uusia tehokkaampia tapoja ratkaista asiakkaan ongelma. Tällä on vaikutusta koko operaattorin liiketoimintaan ja nämä vaikutukset ovat nähtävissä myös yrityksille tarjottavien viestintäratkaisujen markkinoilla. \\
+
+Seuraavassa kappaleessa pureudutaan Kontakti L:n asiakasprosessin nykytilaan, että voidaan arvioida sitä suhteessa sille asetettuihin tavoitteisiin.
+
+%Kontakti L-tuote siis täydentää Telian viestintäratkaisujen tuoteportfoliota kahdella tavalla. Se tarjoaa ratkaisun asiakaspalvelujärjestelmien tuoteportfoliossa olleeseen aukkoon keskikokoisessa asiakassegmentissä, ja se tukee integraatiotioita Microsoftin alustan eri tuotteisiin.\\
+
+%Telian kannalta markkinassa on eniten kasvupotentiaalia pienessä ja keskisuuressa asiakassegmentissä, jossa Telian markkinaosuus on pienin. Kappaleessa 4. mainittiin, että yrityksellä on kolme pääasiallista tapaa kehittää liiketoimintavalmiuksia markkinoilla: Kehitä tuotetta tai palvelua tekemällä siitä arvokkaampia asiakkaalle. Tehosta sisäisiä prosesseja tuottaaksesi arvo pienemmilläkustannuksilla. Paranna asiakaspolkua helpottamalla asiakkaan arvon hankkimista. Kuvan \ref{fig:digivisio} mukaan tavoite Kontakti L-tuotteen osalta onkin saada liiketoiminnan tuloksia aikaan tehostamalla prosesseja.
+
+%Erityisesti Kontakti L-tuotteen osalta markkinaosuuden kasvattaminen keskisuuressa asiakassegmentissä on kiinni siitä onnistutaanko sen tuottamisessa yhdistämään Kontakti M- ja Kontakti XL-tuotteiden hyvät puolet. \\
+
+%Asiakasprosessilta vaaditaankin nopeutta ja kustannustehokkuutta. Haaste Telian kannalta tässä onkin oikean toimintamallin löytäminen asiakasprosessissa. Kontakti L on myös uusi tuote, jonka myötä sille asetettiin uuden strategian mukaisesti tavoite korkeasta automaatioasteesta. Johdon asiakasprosessille asettama tavoite on 80-prosentin automaatio. Asiakasprosessissa tulisikin ottaa siksi huomioon sen yhteensopivuus tavoiteltuun IT-arkkitehtuuriin.
+% Vendor ja IMS
+%kestää pitkään että laskutus saadaan käyntiin toimituksen venyessä
 
 
 
@@ -1014,18 +1043,30 @@ Asiakasprosessilta vaaditaankin nopeutta ja kustannustehokkuutta. Haaste Telian 
 
 %Mid-segmentin osalta ratkaisu oli tuoda Kontakti L-palvelu markkinoille. Se tavoite on olla toiminnallisuuksiltaan lähes Kontakti XL:n tasoa, mutta tarjoata modernin asiakaspalvelujärjestelmän vaatimat toiminnallisuudet asiakkaille halvemmalla hinnalla, ja nopeammalla toimitusajalla. Kontakti L:n liiketoimintatapaus perustuukin halvempaan hintaan, joka on saavutettavissa tehokkaammalla toimitusprosessilla, ja integroitavuudella Microsoftin tuotteisiin ja puheympäristöön.
 
-\subsection{Asiakasprosessi Telian prosessiarkkitehtuurissa}
+\section{Kontakti L:n asiakasprosessin nykytila}
+
+Tässä kappaleessa käydään läpi Kontakti L:n asiakasprosessin nykytila. Nykytilan kuvaamiseksi kappaleessa kerrotaan ensin Kontakti L:n ratkaisuksi valitusta järjestelmästä. Tämän jälkeen esitetään yleiskuva sen asiakasprosessin nykytilasta, ja lisäksi esitetään mukana olevat sidosryhmät ja järjestelmät. Seuraavaksi kappaleessa käydään läpi asiakasprosessin eri vaiheet yksityiskohtaisesti läpi, josta ilmenee vaiheissa toimivat sidosryhmät ja järjestelmät. Lopuksi kiteytetään haastatteluissa esille nousseita haasteita asiakasprosessin eri vaiheissa.
+
 
 Kuvassa \ref{fig:prosark} on kuvattuna Telian prosessiarkkitehtuuri korkealta tasolta. 
 
 
 Telian prosessiarkkitehtuurin mukaan asiakasprosessi on 
 Ongelmia erityisesti order-to-cash prosesseissa.
+%Alt+0151
 
+\subsection{Kontakti L:n asiakasprosessin määrittäminen}
 
-\subsection{Kontakti L:n asiakasprosessin nykytila}
+Telian prosessiarkkitehtuuri (kuva \ref{fig:prosark}) määritteli kolme erilaista asiakasprosessia: Tarpeesta tilaukseen, tilauksesta kassavirraksi ja ylläpidon ja käytön. Tämän työn tarkastelussa on 2. kappaleessa esitetty asiakasprosessi, joka on prosessiarkkitehtuurin tilauksesta kassavirraksi —asiakasprosessi. Tilauksesta kassavirraksi —asiakasprosessi luo toimintamallit tuotteen tilaamiseen, toimittamiseen ja laskuttamiseen. Telian IT-arkkitehtuurin (kuvassa \ref{fig:ratkark}) näkökulmasta prosessissa painottuu backend-kerros, jossa sijaitsee tuotanto- ja laskutusjärjestelmät.\\
 
-Tässä kuvataan Kontakti L-tuotteen asiakasprosessi. Telian prosessiarkkitehtuuri määritteli kolme erilaista asiakasprosessia. Tässä kuvattava asiakasprosessi on prosessiarkkitehtuurin tilauksesta kassavirraksi-prosessi, jolla on kolme tehtävää: Tuotteen tilaaminen, toimittaminen ja laskuttaminen. Tämä prosessin avulla Kontakti L-tuote on siis mahdollista tilata, toimittaa ja laskuttaa.
+Kuten edellisessä kappaleessa tuotiin esiin, Telian digitaalisen transformaation painopiste on prosessiarkkitehtuurin tarpeesta tilaukseen asiakasprosessissa ja siten IT-arkkitehtuurin kahdessa ylimmässä kerroksessa. Tästä huolimatta, koska Kontakti L on uusi tuote, on sen tilauksesta kassavirraksi asiakasprosessille annettu tavoitteeksi 80\% automaatioaste käyttämällä IT-arkkitehtuurin tavoitejärjestelmiä.\\
+
+Telian laatujärjestelmä määrittää asiakasprosesseille niiden kehitystä kuvaavan valmiusasteen. Kontakti L:n asiakasprosessi on tämän työn kirjoittamisen hetkellä hyväksytty valmiina myyntiin —asteelle. Tässä vaiheessa on selvillä tuotteen hinnasto ja yksityiskohdat. Asiakasprosessin toimintamallit eivät ole tässä vaiheessa vielä täysin valmiina, mutta toimituksia voidaan tehdä. Kontakti L ei ole vielä saanut hyväksyntää seuraavalle asteelle, joka on valmiina toimitukseen—aste. Tässä vaiheessa tuote tai palvelu on valmiina toimitettavaksi tilauksen perusteella ja kaikki asiakasprosessin toimintamallit ovat selvillä.\\
+
+Kontakti L:n asiakasprosessin nykytila on selvitetty lähes valmiiden toimintamallien ja ohjeistuksien, sekä prosessissa toimivien sidosryhmien haastatteluiden perusteella.
+
+Prosessin kehitysvaihe jossa ollaan menossa. RTS ei RTD
+Jotain prosessin rakennusvaiheesta.
 
 \subsubsection{Yleiskuva ja sidosryhmät}
 
@@ -1037,6 +1078,10 @@ Kuvassa \ref{fig:paavaih} on kuvattuna Kontakti L:n asiakasprosessin vaiheet ja 
     \caption{Kontakti L:n asiakasprosessin päävaiheet ja tuotekehitys.}
     \label{fig:paavaih}
 \end{figure}
+
+Kontakti L:n asiakasprosessi alkaa tilausvaiheesta. Tilausvaiheeseen tuleva syöte on tieto asiakkaan tarpeista. Vaiheen lopputulos on asiakashallinnan järjestelmään muodostuva tilaus asiakkaalle myydystä ratkaisusta, joka on syöte 
+
+
 
 Kontakti L:n asiakasprosessi alkaa ratkaisun myyjän tekemästä tilauksesta, josta se välittyy tilauksen vastaanottoon. Tilauksen vastaanotossa toimii määrätyt henkilöt joiden tehtävä on varmistaa, että tilaus täyttää Kontakti L:n tilauksen minimivaatimukset. Tilauksen vastaanotto välittää minimivaatimukset täyttävän tilauksen Telian projektitoimiston työjonoon, josta alkaa suunnitteluvaihe.\\
 
@@ -1088,7 +1133,7 @@ Järjestelmät
 - Tiksu
 \subsubsection{Prosessin läpikäynti}
 
-Tässä osiossa käymme läpi Kontakti L:n asiakasprosessin kulun vaihe kerrallaan. Ensin käydään läpi yksittäisen vaiheen kulku, ja samalla kuvataan vaiheen riippuvuutta muihin prosessin vaiheisiin. Kuvauksessa tuodaan esiin vaiheen toimijat, dokumentit ja järjestelmät. Tämän osion tavoite on antaa tarkka kuva Kontakti L:n asiakasprosessin toiminnasta.\\
+Tässä osiossa käymme läpi Kontakti L:n asiakasprosessin kulun vaihe kerrallaan. Ensin käydään läpi yksittäisen vaiheen kulku, ja samalla kuvataan vaiheen riippuvuutta muihin prosessin vaiheisiin. Kuvauksessa tuodaan esiin vaiheen toimijat, dokumentit ja järjestelmät. Tämän osion tavoite on antaa tarkka kuva Kontakti L:n asiakasprosessin toiminnasta. Asiakasprosessin eri vaiheita kuvataan Telian niille käyttämillä termeillä.\\
 
 \textbf{Tilausvaiheen kulku}\\
 
@@ -1133,14 +1178,14 @@ Vaiheen kesto on arvioitu olevan noin 1-2 kuukautta.\\
 
 Toimituksen suunnitteluvaihe käsittää asiakastoimituksen valmisteluun liittyvät työvaiheet: Toimitusprojektin aloitustoimet, jossa tilauksen sisältö tarkastetaan. Projektin resurssivaraukset, eli ihmiset, jotka tekevät seuraavat työvaiheet. Ratkaisuun liittyvän määrittelytyön. Viimeisenä toimituksen ja laskutuksen valmistelun. Tämän vaiheen tuloksena on projektisuunnitelma ja määrittelydokumentit. Käsitellään näitä neljää suunnitteluvaiheen osasta erillään.\\
 
-\textbf{Suunnitteluvaihe: Aloitustoimet}\\
+\textbf{Suunnitteluvaihe: Tilauksen läpikäynti}\\
 
-Suunnitteluvaiheen aloitustoimiin päästään kun projektitoimiston esimies on vastuuttanut projektipäällikön Kontakti L:n toimitusprojektille MultiBella-järjestelmän tilauksen perusteella. Projektipäällikkö käynnistää toimitusprojektin hankkimalla sille projektinumeron ProofX-järjestelmässä, johon kustannukset voidaan kohdentaa. Tämän jälkeen hän järjestää tapaamisen Kontakti L:n tuotepäällikön ja tuotekehityspäällikön kanssa tilauksen läpikäymiseksi. \\
+Suunnitteluvaiheen aloitustoimiin päästään kun projektitoimiston esimies on vastuuttanut projektipäällikön Kontakti L:n toimitusprojektille MultiBella-järjestelmän tilauksen perusteella. Kuvassa \ref{fig:aloitustoimet} on esitettynä tämä osuus suunnitteluvaiheesta. Projektipäällikkö käynnistää toimitusprojektin hankkimalla sille projektinumeron ProofX-järjestelmässä, johon kustannukset voidaan kohdentaa. Tämän jälkeen hän järjestää tapaamisen Kontakti L:n tuotepäällikön ja tuotekehityspäällikön kanssa tilauksen läpikäymiseksi. \\
 
 \begin{figure}[!h]
     \centering
     \includegraphics[scale=0.3]{images/aloitus.pdf}
-    \caption{Kontakti L:n asiakasprosessin suunnitteluvaiheen aloitustoimet.}
+    \caption{Kontakti L:n asiakasprosessin suunnitteluvaiheen tilauksen läpikäynti.}
     \label{fig:aloitustoimet}
 \end{figure}
 
@@ -1154,9 +1199,111 @@ Kun toimitettavat komponentit on tunnistettu ja kehitystyötä vaativien kompone
 
 \textbf{Suunnitteluvaihe: Resurssivaraukset}\\
 
+Toimitettavien komponenttien perusteella projektipäällikkö aloittaa resurssivarausten tekemisen. Kuvassa \ref{fig:resurssit} on esitettynä resurssivarausten osat. Ensimmäisenä projektipäällikkö tilaa Datanet-yhteyden asiakkaalle Tomaatti-järjestelmän kautta jos asiakkaalla ei vielä olemassaolevaa yhteyttä. Seuraavaksi hän tekee toimitusvastaavan resurssivarauksen MultiBella-järjestelmän kautta, ja sopii hänen kanssaan roolit toimitusprojektin ajaksi.\\
 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.25]{images/resurssivaraukset.pdf}
+    \caption{Kontakti L:n asiakasprosessin suunnitteluvaiheen resurssivaraukset.}
+    \label{fig:resurssit}
+\end{figure}
+
+Tämän jälkeen projektipäällikkö tarkastaa sopimuksessa vaaditun koulutustarpeen, ja tekee sen perusteella resurssivarauksen MultiBella-järjestelmästä. Sen jälkeen hän varaa resurssin puhe- ja IP-suunnitteluun ja pyytää heiltä sopimuksessa mainitut suunnitelmat ratkaisun toimittamiseksi.\\
+
+Seuraavaksi projektipäällikkö varaa resurssin palvelunumeroiden ja mobiilinumeroiden toimituksilta, ja välittää heille tiedot ratkaisussa käytetyistä numeroista, numerosiirroista ja uusien liittymien avaamisesta. Laskutuksen henkilöresurssin varaaminen on toistaiseksi epäselvää, ja sen vuoksi Kontakti L:n tuotepäällikön vastuulla. Toistaiseksi tuotepäällikkö on hoitanut laskutuksen itse manuaalisesti Giga-laskutusjärjestelmästä. Laskutuksen resurssia kuitenkin tarvitaan uuden yrityksen luomisessa, joten resurssi varataan silloin MultiBella-järjestelmästä joko tuotepäällikön tai projektipäällikön toimesta.\\
+
+Viimeiseksi projektipäällikkö varaa resurssit järjestelmän asennukseen ja konfigurointiin lähettämällä sähköpostin Tiedon ja Telian järjestelmäasiantuntijoiden esimiehille eli tuotantopäälliköille. Tuotantopäälliköt nimeävät resurssit tehtäviinsä vastaamalla tähän sähköpostiin.\\
+
+Kun kaikki resurssivaraukset on tehty, päästään aloittamaan ratkaisun määrittelytyö.\\
+
+\textbf{Suunnitteluvaihe: Määrittelyt}\\
+
+Kuvassa \ref{fig:maarittely} on esitettynä suunnitteluvaiheen määrittelyt. Ratkaisun määrittelytyö alkaa projektipäällikön järjestämässä tapaamisessa asiakkaan edustajien kanssa, jossa on mukana toimitusprosessissa olevat resurssit. Tapaamisen tarkoitus on tarkentaa tilauksen tietoja, sopia yhteisistä toimintamalleista, yhteyshenkilöistä ja aikataulusta. Tämän tapaamisen jälkeen projektipäällikkö järjestää vielä toisen tapaamisen sisäisesti toimitusorganisaation kanssa.\\
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.25]{images/maarittely.pdf}
+    \caption{Kontakti L:n asiakasprosessin suunnitteluvaiheen määrittelyt.}
+    \label{fig:maarittely}
+\end{figure}
+
+Kun yhteisistä toimintamalleista on sovittu, projektipäällikkä tekee projektisuunnitelman ensimmäisen version Project online projektisuunnittelujärjestelmässä. Samanaikaisesti puhesuunnittelija ja IP-suunnittelija aloittavat ratkaisun suunnittelun. He suunnittelevat ratkaisun yhteistyössä asiakkaan yhteyshenkilöiden kanssa. Suunnittelutyö dokumentoidaan Microsoft Visio-ohjelmalla. Puhesuunnittelijan työn tuloksena syntyy kuvaus kokonaisratkaisuista ja sen eri komponenteista ja vuokaavio ratkaisun numeroista, jonoista ja komponenteista. Puhesuunnittelija myös kerää asiakkaan käyttäjätiedot. IP-suunnittelijan työn tuloksena syntyy verkkokuva, josta ilmenee ratkaisun yhteydet, IP-osoitteet ja verkot. Suunnittelijat tallentavat dokumentit Documentum versiohallinnan järjestelmään.\\
+
+Lopuksi toimitusvastaava vie sopimuksen liitteineen ECM-järjestelmään. Jo tämän vaiheen aikana toimitusvastaava on aloittanut toimituksen ja laskutuksen valmistelun.\\ 
+
+\textbf{Suunnitteluvaihe: Toimituksen ja laskutuksen valmistelu}\\
+
+Jo määrittelyiden tekemisen aikana toimitusvastaava aloittaa valmistelemaan toimitusta ja laskutusta. Kuvassa \ref{fig:valmtoimlask} on esitettynä tämän vaiheen kulku. Tämä vaihe on osittain päällekäinen toimitusvaiheen kanssa.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.2]{images/valmtoimlask.pdf}
+    \caption{Kontakti L:n asiakasprosessin suunnitteluvaiheen toimituksen ja laskutuksen valmistelu.}
+    \label{fig:valmtoimlask}
+\end{figure}
+
+Ensimmäinen toimitusvastaavan tehtävä on seurata Datanet-yhteyksien toimitusta ja saada aikataulu sen valmistumisesta, koska toimitusvaihe ei voi alkaa ennen yhteyksien saamista. Tämän jälkeen hän tekee asiakkaan palvelunumeroista ohjausmääritykset valmiiksi Cid manager numeroiden hallintatyökalun kautta odottamaan toimitusta. Toimitusvastaava käy myös seuraavaksi läpi manuaalilaskutuksen käytännöt Kontakti L:n tuotepäällikön kanssa, että hänellä on tarvittavat tiedot laskutustavasta ja yhdistelmälaskun tilaamisesta asiakkaalle.\\
+
+Tämän jälkeen toimitusvastaava tilaa Kontakti L:n palvelimet Asset Center-järjestelmästä, ja lisää tietoihin kuvassa näkyvät tiedot asiakkaan ratkaisusta vianhallintaa varten. Sitten hän tekee MultiBella-järjestelmässä työpyynnön Telia Eestille yhdistelmälaskun tekemisestä asiakkaalle ja ilmoittaa laskutustavan Suomen laskutukseen.\\
+
+Seuraavaksi toimitusvastaava pyytää sähköpostitse Kontakti L:n tuotekehityspäällikköä tilaamaan lisenssiavaimen järjestelmään Zylinciltä ja päivittää tiedon tästä MultiBella-järjestelmään. Tuotekehityspäällikkö tilaa lisenssiavaimen sähköpostitse Zylinciltä. Palvelinten ollessa valmiina, toimitusvastaava tilaa Tiksu tiketöintijärjestelmästä etäyhteydet toimitusta varten. Etäyhteyksien toimiessa, hän lähettää Tiksu-järjestelmästä työpyynnön Tiedolle Kontakti L:n asennusta varten ja liittää sähköpostista lisenssiavaimen liitteeksi.\\
+
+Kun Tieto on kuitannut asennuksen valmistuneen, päivittää toimitusvastaava tiedon Multibella-järjestelmään. Seuraavaksi hän tilaa Kontakti L:n konfigurointi ja integrointityön Telian järjestelmäasiantuntijalta Tiksu-järjestelmän kautta ja liittää määrittelydokumentit työpyynnön liitteeksi.\\
+
+Toimitusvastaava seuraa työvaiheiden toteutumista ja päivittää tiedot MultiBella-järjestelmään. Tämä seuranta kuuluu osaltaa jo seuraavaan toimitusvaiheeseen asiakasprosessia.\\
+
+\textbf{Toimitusvaihe}\\
+
+Vaiheen kesto on arvioitu olevan noin 2-4 kuukautta.\\
+
+Tämä vaihe on esitetty kuvassa \ref{fig:toimitus}. (Ei toistaiseksi tarkempaa tietoa yhteyksien toimituksesta) Toimitusvaihe alkaa kun Datanet-toimitus saa Tiksu-järjestelmästä työpyynnön yhteyksien toimittamisesta. Työpyynnön liitteenä on IP-suunnittelijan tekemä verkkokuva, jonka perusteella yhteydet toimitetaan. Työn valmistuessa asiantuntija kuittaa Tiksu-järjestelmän työpyynnön valmiiksi.\\
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.3]{images/toimitus.pdf}
+    \caption{Kontakti L:n asiakasprosessin toimitusvaihe.}
+    \label{fig:toimitus}
+\end{figure}
+
+Tämän jälkeen Tiedon järjestelmäasiantuntija saa työpyynnön Tiksu-järjestelmässä Kontakti L:n asennuksesta, jonka liitteenä on järjestelmän lisenssiavain. Järjestelmäasiantuntija asentaa Kontakti L:n palvelimelle Avacon-etäyhteyden avulla, ja kuittaa tämän jälkeen työpyynnön valmiiksi Tiksu-järjestelmässä.\\
+
+Tämän jälkeen Telian järjestelmäasiantuntija saa työpyynnön Tiksu-järjestelmässä Kontakti L:n konfigurointi- ja integrointityöstä. Työpyynnön liitteenä on ratkaisun määrittelydokumentit ja käyttäjätiedot. Järjestelmäasiantuntija ottaa Avacon-etäyhteyden Kontakti L-palvelimelle. Ensin hän lisää käyttäjätiedon Kontakti L-järjestelmään, ja sen jälkeen tekee tarvittavat integroinnit. Kun integraatiot toimivat, alkaa järjestelmäasiantuntija konfiguroimaan jonoja ja kontaktien ohjaustietoja järjestelmään. Kun kaikki integraatiot ja konfiguroinnit on todettu toimiviksi, järjestelmäasiantuntija kuittaa Tiksu-järjestelmän työpyynnön valmiiksi.\\
+
+Tämän jälkeen alkaa Kontakti L-järjestelmän testausvaihe.\\
+
+\textbf{Testausvaihe}\\
+
+Tästä vaiheesta ei ole ohjeistusta tai dokumentaatiota. Haastatteluissa Telian järjestelmäasiantuntija kertoi testanneensa järjestelmän toimintaa integrointi ja konfigurintivaiheessa.\\
+
+\textbf{Koulutusvaihe}\\
+
+Kuvassa \ref{fig:koulutus} ilmenee koulutusvaiheen kulku. Koulutusvaihe alkaa kun kouluttaja käy sopimuksen läpi projektipäällikön tai toimitusvastaavan kanssa. Asiakkaan kanssa tehdystä sopimuksesta ilmenee mitä koulutuksista on sovittu asiakkaan kanssa.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.3]{images/koulutukset.pdf}
+    \caption{Kontakti L:n asiakasprosessin koulutusvaihe.}
+    \label{fig:koulutus}
+\end{figure}
+
+Sopimuksen perusteella kouluttaja suunnittelee koulutuksen sisällön ja tekee tästä kirjallisen suunnitelman. Koulutuksen sisällön ollessa selvillä, aikatauluttaa kouluttaja yhdessä projektipäällikön ja toimitusvastaavan kanssa tarvittavien koulutusten ajankohdan.\\
+
+Kouluttaja tyypillisesti valmistelee koulutusta asiakkaan tarpeen mukaan, ja koulutus voidaan järjestää joko Telian tiloissa tai asiakkaalla. Kouluttaja pitää koulutukset suunnitelman mukaan. Järjestelmän käyttäjien ollessa valmiita ottamaan järjestelmä jokapäiväiseen käyttöön, alkaa käyttöönottovaihe.\\
+
+\textbf{Käyttöönottovaihe}\\
+
+\textbf{Lopetusvaihe}\\
+
+\textbf{Laskutusvaihe}\\
 
 \subsubsection{Esiin nousseet haasteet}
+
+Prosessin rakennusvaiheen haasteet tavoitejärjestelmien ja vendorin osalta.
+
+
+Käyttöönoton ongelmat usein joko lisäpalveluiden käyttöönoton haasteita tai ohjeiden epäselvyyksiin liittyviä. 
+
+
 \textbf{Tilausvaiheessa esiin nousseet haasteet}\\
 
 - Myyjä ei osaa täyttää paha-lomaketta ja jättää sen usein tekemättä\\
